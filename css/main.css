@@ -1,0 +1,287 @@
+/* Specification */
+body 
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: #2D3049;
+	letter-spacing: 5%;
+
+}
+* 
+{
+	box-sizing: border-box;
+}
+ul, li 
+{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 
+{
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+p 
+{
+	margin: 0;
+	padding: 0;
+}
+header, section
+{
+	text-align: center;
+}
+.header
+{
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.39%, rgba(36, 32, 84, 0.23) 44.44%), 
+	url(../img/bg-bridge.jpg) no-repeat center top / cover;
+}
+.container
+{
+	width: 1140px;
+	margin: 0 auto;
+}
+/* Header */
+.header
+{
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.logo
+{
+	margin-bottom: 201px;
+	display: inline-block;
+}
+.preview__dreamtown
+{
+	font-weight: 800;
+	font-size: 15px;
+	margin: 	0 auto;
+	width: 330px;
+	height: 34px;
+	padding: 9px 18px;
+	display: inline-block;
+	background: #FFFFFF;
+	border-radius: 78px;
+	text-transform: uppercase;
+}
+.preview__guide
+{
+	margin-top: 24px;
+	color: 	white;
+	font-size: 60px;
+	letter-spacing: 0.145em;
+	text-transform: uppercase;
+}
+.preview__route
+{
+	margin-top: 24px;
+	font-size: 20px;
+	color: 	white;
+	font-weight: 500;
+	line-height: 24px;
+	margin-bottom: 42px;
+}
+.btn
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 800;
+}
+.preview__btn
+{
+	display: inline-block;
+	padding: 18px 52px;
+	width: 247px;
+	height: 56px;
+	font-size: 16px;
+	font-weight: 800;
+	background: #5F51FF;
+	transition-duration: 0.6s;
+	color: 	white;
+	border-radius: 119px;
+}
+.preview__btn:hover
+{
+	background: white;
+	color:#5F51FF ;
+	border: 1px solid #5F51FF;
+	box-sizing: border-box;
+	border-radius: 94px;
+}
+.preview__arrow
+{
+	background: url('../img/arrow-down.svg');
+	width: 18px;
+	height: 27px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 217px;
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+.preview__arrow:hover
+{
+	opacity: 1;
+}
+.routes
+{
+	padding-top: 143px;
+}
+/* Second section */
+.av-routes
+{
+	margin-bottom: 100px;
+}
+.h2
+{
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 37px;
+	color: #304041;
+	
+}
+.offer
+{
+	background:  #F1F0FF;
+	display: flex;
+	margin-bottom: 108px;
+	justify-content: space-between;
+}
+.info
+{
+	padding: 112px 78px;
+	text-align: left;
+}
+.info__route-num
+{
+	text-transform: uppercase;
+	display: inline-block;
+	color: #789AA0;
+	line-height: 18px;
+	font-weight: 500;
+	text-align: left;
+}
+.info__capital
+{
+	font-size: 24px;
+	line-height: 29px;
+	color: #304041;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.info-wrapper__route-info:not(:last-child)
+{
+	margin-bottom: 35px;
+}
+.info-wrapper__route-info
+{
+	line-height: 23px;
+}
+.watch
+{
+	width: 476px;
+	height: 649px;
+	box-shadow: 0px 25px 70px rgba(4, 43, 55, 0.28);
+	border-radius: 0px 5px 5px 0px;
+}
+.info__arrow
+{
+	margin-top: 47.5px;
+	margin-left: 3px;
+	background: url('../img/arrow-next.svg');
+	width: 68px;
+	height: 17px;
+	display: block;
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+.info__arrow:hover
+{
+	opacity: 1;
+}
+.btn-routes
+{
+	display: inline-block;
+	line-height: 20px;
+	color:#5F51FF ;
+	border: 1px solid #5F51FF;
+	box-sizing: border-box;
+	border-radius: 94px;
+	padding: 18px 49px;
+	transition-duration: 0.6s;
+}
+.btn-routes:hover
+{
+	color: white;
+	font-size: 16px;
+	font-weight: 800;
+	background: #5F51FF;
+}
+/* Third section */
+.possibilities
+{
+	padding-top: 146px;
+	
+}
+.wrapper-bg
+{
+	padding: 150px 0;
+	background: url('../img/square.jpg') no-repeat right;
+}
+.guide-ab
+{
+	text-transform: uppercase;
+	margin-bottom: 90px;
+}
+.wrapper
+{
+	display: flex;
+}
+.list__item
+{
+	text-align: left;
+	width: 	400px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #304041;
+	margin-right: 176px;
+}
+.list__item:before
+{
+	content:' ';
+	width: 65px;
+	height: 7px;
+	display: block;
+	background: #5F51FF;
+	border-radius: 23px;
+	margin-bottom: 15px;
+}
+.list__item:not(:last-child)
+{
+	margin-bottom: 61px;
+}
+
+/* Footer */
+.footer
+{
+	padding-top: 147px;
+	padding-bottom: 165px;
+}
+.footer-wrapper
+{
+	display: flex;
+}
+.footer-wrapper__rights
+{
+	display: inline-block;
+}
+.footer-wrapper__rights:not(:last-child)
+{
+	margin-right: 60px;
+}

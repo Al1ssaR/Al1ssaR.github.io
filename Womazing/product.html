@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Страница товара</title>
+	<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+		<link rel="stylesheet" href="css/header-footer.css">
+		<link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+	<header class="header">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="modal-window">
+				<button class="modal-window__close">
+					<img src="img/Close.svg" alt="">
+				</button>
+				<h3 class="modal-window__title">
+					Заказать обратный звонок
+				</h3>
+				<form action="#" class="form-call js-form" id="form-cover">
+                    <input type="text" class="form-call__input" placeholder="Имя" required name="name">
+                    <input type="email" class="form-call__input" placeholder="Email" required name="email">
+                    <input type="tel" class="form-call__input" placeholder="Телефон" required name="tel">
+                    <button type="submit" class="btn form-call__btn " data-submit>Заказать звонок</button>
+                </form>
+			</div>
+			<div class="modal-aftermath">
+				<h3 class="modal-window__title">
+					Отлично! Мы скоро вам перезвоним.
+				</h3>
+				<button class="btn2 modal-aftermath__btn">
+					Закрыть
+				</button>
+			</div>
+			<div class="header-menu">
+				<div class="mobile-wrapper">
+					<button type="button" class="header-menu__logo">
+						<img src="img/logo.svg" alt="" >
+					</button>
+					<nav class="mobilemenu">
+						<ul class="mobilemenu-wrapper">
+							<li class="mobilemenu__item">
+								<a href="index.html">Главная</a>
+							</li>
+							<li class="mobilemenu__item " >
+								<a href="shop.html">Магазин</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="about.html">О бренде</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_headershop" id="shop-link">
+							<a href="shop.html">Магазин</a>
+							<ul class="headershopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-wrapper">
+					<button type="button" class="phone-wrapper__btn">
+					</button>
+					<a href="+7495235412" class="phone-wrapper__number">+7 (495) 823-54-12</a>
+				</div>
+				<a href="shopping-cart.html" class="header-menu__shop">
+					<img src="img/shop.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</header>
+	<section class="single-product">
+		<div class="container">
+			<h1 class="cart-title h1">Свитшот Sweet Shot</h1>
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<span class="breadcrumbs__item">—</span>
+				<a href="#" class="breadcrumbs__item">Свитшоты</a>
+				<span class="breadcrumbs__item">—</span>
+				<a href="#" class="breadcrumbs__item breadcrumbs__item_sub">Свитшот Sweet Shot</a>
+			</div>
+		<div class="customaze">
+			<img src="img/product (3).png" alt="" class="customaze__product">
+			<div class="custom-menu">
+				<span class="custom-menu__price">$311</span>
+				<span class="custom-menu__price custom-menu__price_discount">$450</span>
+				<h4 class="custom-menu__title ">Выберите размер</h4>
+				<div class="size">
+					<button class="size__item">
+						s
+					</button>
+					<button class="size__item active">
+						m
+					</button>
+					<button class="size__item">
+						l
+					</button>
+					<button class="size__item">
+						xl
+					</button>
+					<button class="size__item">
+						xxl
+					</button>
+				</div>
+				<h4 class="custom-menu__title ">Выберите цвет</h4>
+				<div class="color">
+					<button class="color__item color__item_brown"></button>
+					<button class="color__item color__item_grey active"></button>
+					<button class="color__item color__item_pink"></button>
+					<button class="color__item color__item_yellow"></button>
+				</div>
+				<div class="cart-btn">
+					<span class="cart-btn__count">1</span>
+					<button class="btn cart-btn__btn">Добавить в корзину</button>
+				</div>
+			</div>
+		</div>
+		<div class="link-products">
+			<h2 class="link-products__title h2">
+				Связанные товары
+			</h2>
+			<div class="product-wrapper">
+				<div class="product">
+					<div class="product__hover">
+						<a href="" class="arrow-right">
+							<img src="img/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<img src="img/product (1).png" alt="" class="product__img">
+					<h4 class="product__title">
+						Футболка USA
+					</h4>
+					<div class="cost-wrapper">
+						<span class="product__cost">$129</span>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__hover">
+						<a href="" class="arrow-right">
+							<img src="img/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<img src="img/product (2).png" alt="" class="product__img">
+					<h4 class="product__title">
+						Купальник Glow
+					</h4>
+					<div class="cost-wrapper">
+						<span class="product__cost">$129</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="documentation">
+					<a href="index.html" class="documentation__logo">
+						<img src="img/logo.svg" alt="" >
+					</a>
+					<span class="documentation__rights">© Все права защищены</span>
+					<a href="#" class="documentation__link">Политика конфиденциальности</a>
+					<a href="#" class="documentation__link">Публичная оферта</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_shop" >
+							<a href="shop.html">Магазин</a>
+							<ul class="shopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<a href="tel:+74958235412" class="contacts__number">
+						+7 (495) 823-54-12
+					</a>
+					<a href="" class="contacts__email">
+						hello@womazing.com
+					</a>
+					<div class="social">
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item" target="_blank">
+							<img src="img/social (3).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (2).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (1).svg" alt="">
+						</a>
+					</div>
+					<a href="#" rel="noreferrer noopener nofollow" class="contacts__pay"  target="_blank">
+						<img src="img/visa.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="js/header-footer.js"></script>
+	
+</body>
+</html>

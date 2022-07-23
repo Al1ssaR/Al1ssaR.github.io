@@ -1,0 +1,146 @@
+.contact-info{
+	padding-top: 165px;
+	padding-bottom: 130px;
+}
+.map-wrapper{
+	margin-bottom: 130px;
+}
+.map-wrapper__map{
+	width: 100%;
+	height: 476px;	
+}
+.contact-wrapper{
+	display: flex;
+	margin-bottom: 130px;
+}
+.contact:not(:last-child){
+	margin-right: 100px;
+}
+.contact__title{
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 19px;
+
+}
+.message-form{
+	display: flex;
+	flex-direction: column;
+}
+.message-form.active{
+	padding-bottom: 100px;
+}
+.message-form__title{
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 60px;
+}
+.message-form__input{
+	width: 350px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #868686;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #000000;
+}
+.message-form__input_area{
+	padding-bottom: 110px;
+}
+.message-form__input:not(:first-child){
+	margin-top: 35px;
+}
+.message-form__btn{
+	width: 189px;	
+	display: block;
+	margin-top: 35px;
+	padding: 22px 50px;
+}
+.message-aftermath{
+	display: none;
+	margin-top: 62px;
+	width: 437px;	
+	background: #F1EADC;
+	padding: 30px 76px;
+}
+.message-aftermath__text{
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+
+.modal-aftermath{
+	top: 200%;
+}
+
+/*Adaptive*/
+
+@media (max-width: 1199px) {
+  .container{
+  	width: 960px;
+  }
+  
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+	.container{
+  	width: 720px;
+  }
+   .contact:not(:last-child) {
+    margin-right: 55px;
+}
+ 
+
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  .container{
+  	width: 540px;
+  }
+  .modal-aftermath{
+  	width: 100%;
+  	left: 3%;
+  	top: 200%;
+  }
+  .contact-wrapper{
+  	flex-direction: column;
+  }
+  .contact:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  
+  
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  .container{
+  	padding: 0 15px;
+  	width: 100%;
+  }
+  .message-form__input{
+  	width: 85%;
+  }
+  .message-aftermath{
+  	text-align: center;
+  	width: 100%;
+  }
+  .modal-aftermath{
+  	width: 98%;
+  }
+  .modal-window{
+	width: 92%;
+  }
+  
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оформление заказа</title>
+	<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+		<link rel="stylesheet" href="css/header-footer.css">
+		<link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+	<header class="header">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="modal-window">
+				<button class="modal-window__close">
+					<img src="img/Close.svg" alt="">
+				</button>
+				<h3 class="modal-window__title">
+					Заказать обратный звонок
+				</h3>
+				<form action="#" class="form-call js-form" id="form-cover">
+                    <input type="text" class="form-call__input" placeholder="Имя" required name="name">
+                    <input type="email" class="form-call__input" placeholder="Email" required name="email">
+                    <input type="tel" class="form-call__input" placeholder="Телефон" required name="tel">
+                    <button type="submit" class="btn form-call__btn " data-submit>Заказать звонок</button>
+                </form>
+			</div>
+			<div class="modal-aftermath">
+				<h3 class="modal-window__title">
+					Отлично! Мы скоро вам перезвоним.
+				</h3>
+				<button class="btn2 modal-aftermath__btn">
+					Закрыть
+				</button>
+			</div>
+			<div class="header-menu">
+				<div class="mobile-wrapper">
+					<button type="button" class="header-menu__logo">
+						<img src="img/logo.svg" alt="" >
+					</button>
+					<nav class="mobilemenu">
+						<ul class="mobilemenu-wrapper">
+							<li class="mobilemenu__item">
+								<a href="index.html">Главная</a>
+							</li>
+							<li class="mobilemenu__item " >
+								<a href="shop.html">Магазин</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="about.html">О бренде</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_headershop" id="shop-link">
+							<a href="shop.html">Магазин</a>
+							<ul class="headershopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-wrapper">
+					<button type="button" class="phone-wrapper__btn">
+					</button>
+					<a href="+7495235412" class="phone-wrapper__number">+7 (495) 823-54-12</a>
+				</div>
+				<a href="shopping-cart.html" class="header-menu__shop">
+					<img src="img/shop.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</header>
+	<section class="order">
+		<div class="container">
+			<h1 class="order-title h1">Оформление заказа</h1>
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<span class="breadcrumbs__item">—</span>
+				<a href="#" class="breadcrumbs__item breadcrumbs__item_sub">Оформление заказа</a>
+			</div>
+			
+				<form action="#" class="form-order js-form " id="form-order">
+					<div class="order-wrapper">
+					<div class="order-form">
+					<h3 class="order-form__title h4">
+						Данные покупателя
+					</h3>
+	                <input type="text" class="order-form__input" placeholder="Имя" required name="name">
+	                <input type="email" class="order-form__input" placeholder="Email" required name="email">
+	                <input type="tel" class="order-form__input" placeholder="Телефон" required name="tel">
+	                 <h3 class="order-form__title h4">
+						Адрес получателя
+					</h3>
+	                <input type="text" class="order-form__input" placeholder="Страна" required name="text">
+	                <input type="text" class="order-form__input" placeholder="Город" required name="text">
+	                <input type="text" class="order-form__input" placeholder="Улица" required name="text">
+	                <input type="text" class="order-form__input" placeholder="Дом" required name="text">
+	                <input type="text" class="order-form__input" placeholder="Квартира" required name="text">
+	                <h3 class="order-form__title h4">
+						Комментарий
+					</h3>
+	                <textarea type="textarea" class="order-form__input order-form__input_area" placeholder="Введите текст" name="comment"></textarea>
+	                </div>
+	                <div class="order-pay">
+	            	<h3 class="order-pay__title h4">
+	            		Ваш заказ
+	            	</h3>
+	            	<div class="info-wrap">
+	            		<div class="total-bg"></div>
+		            	<div class="order-info">
+			            	<h4 class=" order-info__item order-info__title ">
+			            		Товар
+			            	</h4>
+			            	<span class="order-info__item">
+			            		Футболка USA
+			            	</span>
+			            	<span class="order-info__item">
+			            		Подытог
+			            	</span>
+			            	<h4 class="order-info__item order-info__title ">
+			            		Итог
+			            	</h4>
+		            	</div>
+		            	<div class="order-cost">
+		            		<h4 class="order-cost__item order-cost__title ">
+			            		Всего
+			            	</h4>
+			            	<span class="order-cost__item">
+			            		$129
+			            	</span>
+			            	<span class="order-cost__item">
+			            		$129
+			            	</span>
+			            	<span class="order-cost__item order-cost__item_total">
+			            		$129
+			            	</span>
+		            	</div>
+	            	</div>
+	            	<div class="pay-methods">
+	            		<h4 class="pay-methods__title h4">
+	            			Способы оплаты
+	            		</h4>
+	            		<div class="method-wrapper">
+	            			<button type="button" class="method-wrapper__btn active">
+	            				<span class="method-wrapper__btn-click active"></span>
+	            			</button>
+	            			<h5 class="method-wrapper__method">
+	            				Оплата наличными
+	            			</h5>
+	            		</div>
+	            		<button type="submit" class="btn pay-methods__btn " data-submit>Размеcтить заказ</button>
+	            	</div>
+
+	            </div>
+	            </div>
+	            </form>
+            
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="documentation">
+					<a href="index.html" class="documentation__logo">
+						<img src="img/logo.svg" alt="" >
+					</a>
+					<span class="documentation__rights">© Все права защищены</span>
+					<a href="#" class="documentation__link">Политика конфиденциальности</a>
+					<a href="#" class="documentation__link">Публичная оферта</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_shop" >
+							<a href="shop.html">Магазин</a>
+							<ul class="shopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<a href="tel:+74958235412" class="contacts__number">
+						+7 (495) 823-54-12
+					</a>
+					<a href="" class="contacts__email">
+						hello@womazing.com
+					</a>
+					<div class="social">
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item" target="_blank">
+							<img src="img/social (3).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (2).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (1).svg" alt="">
+						</a>
+					</div>
+					<a href="#" rel="noreferrer noopener nofollow" class="contacts__pay"  target="_blank">
+						<img src="img/visa.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="js/header-footer.js"></script>
+     <script src="js/order.js"></script>
+	
+</body>
+</html>

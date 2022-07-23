@@ -1,0 +1,116 @@
+.brand{
+	padding-top: 165px;
+	padding-bottom: 130px;
+}
+.breadcrumbs{
+	margin-top: 26px;
+	display: flex;
+	margin-bottom: 205px;
+}
+.breadcrumbs__item{
+	display: block;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #000;
+}
+.breadcrumbs__item_sub{
+	color: #919191;
+}
+.breadcrumbs__item:not(:last-child){
+	margin-right: 13px;
+}
+.brand-offer{
+	display: flex;
+	justify-content: space-between;
+}
+.brand-offer:not(:last-child){
+	margin-bottom: 115px;
+}
+.brand-info{
+	width: 542px;
+}
+.brand-info__title{
+	margin-top: 110px;
+	margin-bottom: 46px;
+}
+.brand-info__text{
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+.brand-info__text:not(:last-child){
+	margin-bottom: 35px;
+}
+.brand-btn{
+	width: 260px;
+	margin: 0 auto;
+	padding: 22px 0px;
+	transition: all 0.5s ease;
+}
+.brand-btn:hover{
+	background: #FFF;
+	transition: all 0.5s ease;
+}
+.modal-aftermath{
+	top: 200%;
+}
+/*Adaptive*/
+
+@media (max-width: 1199px) {
+  .container{
+  	width: 960px;
+  }
+  .brand-info{
+  	width: 435px;
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+	.container{
+  	width: 720px;
+  }
+   .brand-offer{
+  	flex-direction: column;
+  }
+  .brand-offer:nth-child(2n){
+  	flex-direction: column-reverse;
+  }
+ 
+
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  .container{
+  	width: 540px;
+  }
+  .brand-info{
+  	width: 100%;
+  }
+  .modal-aftermath{
+  	width: 100%;
+  	left: 3%;
+  	top: 200%;
+  }
+  
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  .container{
+  	padding: 0 15px;
+  	width: 100%;
+  }
+  .modal-aftermath{
+  	width: 98%;
+  }
+  .modal-window{
+	width: 92%;
+  }
+  
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WOMAZING</title>
+	<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+		<link rel="stylesheet" href="css/header-footer.css">
+		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="overlay"></div>
+	<header class="header">
+		<div class="container">
+			<div class="modal-window">
+				<button class="modal-window__close">
+					<img src="img/Close.svg" alt="">
+				</button>
+				<h3 class="modal-window__title">
+					Заказать обратный звонок
+				</h3>
+				<form action="#" class="form-call js-form" id="form-cover">
+                    <input type="text" class="form-call__input" placeholder="Имя" required name="name">
+                    <input type="email" class="form-call__input" placeholder="Email" required name="email">
+                    <input type="tel" class="form-call__input" placeholder="Телефон" required name="tel">
+                    <button type="submit" class="btn form-call__btn " data-submit>Заказать звонок</button>
+                </form>
+			</div>
+			<div class="modal-aftermath">
+				<h3 class="modal-window__title">
+					Отлично! Мы скоро вам перезвоним.
+				</h3>
+				<button class="btn2 modal-aftermath__btn">
+					Закрыть
+				</button>
+			</div>
+			<div class="header-menu">
+				<div class="mobile-wrapper">
+					<button type="button" class="header-menu__logo">
+						<img src="img/logo.svg" alt="" >
+					</button>
+					<nav class="mobilemenu">
+						<ul class="mobilemenu-wrapper">
+							<li class="mobilemenu__item">
+								<a href="index.html">Главная</a>
+							</li>
+							<li class="mobilemenu__item " >
+								<a href="shop.html">Магазин</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="about.html">О бренде</a>
+							</li>
+							<li class="mobilemenu__item">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_headershop" id="shop-link">
+							<a href="shop.html">Магазин</a>
+							<ul class="headershopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-wrapper">
+					<button type="button" class="phone-wrapper__btn">
+					</button>
+					<a href="+7495235412" class="phone-wrapper__number">+7 (495) 823-54-12</a>
+				</div>
+				<a href="shopping-cart.html" class="header-menu__shop">
+					<img src="img/shop.svg" alt="">
+				</a>
+			</div>
+			<div class="header-wrapper">
+			<div class="header-bg"></div>
+			 <div class="offer-wrapper">
+			  <div class="slider-wrapper">
+				<div class="slide active">
+					<h1 class="slide__title h1">Новые поступления в этом сезоне</h1>
+					<p class="slide__text">
+						Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
+					</p>
+					<div class="btn-wrapper">
+						<a href="#collection" class="btn-wrapper__arrow">
+							<img src="img/arrow-down.svg" alt="" class="arrow-down">
+						</a>
+						<a href="shop.html" class="btn-wrapper__btn btn">Открыть магазин</a>
+					</div>
+				</div>
+				<div class="slide">
+					<h1 class="slide__title h1">Включай новый сезон с WOMAZING</h1>
+					<p class="slide__text">
+						Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров
+					</p>
+					<div class="btn-wrapper">
+						<a href="#collection" class="btn-wrapper__arrow">
+							<img src="img/arrow-down.svg" alt="" class="arrow-down">
+						</a>
+						<a href="shop.html" class="btn-wrapper__btn btn">Открыть магазин</a>
+					</div>
+				</div>
+				<div class="slide">
+					<h1 class="slide__title h1">Что-то новенькое. Мы заждались тебя.</h1>
+					<p class="slide__text">
+						Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!
+					</p>
+					<div class="btn-wrapper">
+						<a href="#collection" class="btn-wrapper__arrow">
+							<img src="img/arrow-down.svg" alt="" class="arrow-down">
+						</a>
+						<a href="shop.html" class="btn-wrapper__btn btn">Открыть магазин</a>
+					</div>
+				</div>
+			  </div>
+					<div class="dots">
+						<span class="dots__item active"></span>
+						<span class="dots__item"></span>
+						<span class="dots__item"></span>
+					</div>
+			 </div>
+			 
+				<img src="img/img1.png" alt="" class="header-wrapper__img">
+				<img src="img/img2.png" alt="" class="header-wrapper__photo header-wrapper__photo_first">
+				<img src="img/img3.png" alt="" class="header-wrapper__photo header-wrapper__photo_second">
+
+			</div>
+		</div>
+	</header>
+	<section  class="collection" id="collection">
+		<div class="container">
+			<h2 class="collection__title h2">Новая коллекция</h2>
+			<div class="product-wrapper">
+				<div class="product">
+					<div class="product__hover">
+						<a href="product.html" class="arrow-right">
+							<img src="img/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<img src="img/product (1).png" alt="" class="product__img">
+					<h4 class="product__title">
+						Футболка USA
+					</h4>
+					<div class="cost-wrapper">
+						<span class="product__cost product__cost_sale">$229</span>
+						<span class="product__cost">$129</span>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__hover">
+						<a href="product.html" class="arrow-right">
+							<img src="img/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<img src="img/product (2).png" alt="" class="product__img">
+					<h4 class="product__title">
+						Купальник Glow
+					</h4>
+					<div class="cost-wrapper">
+						<span class="product__cost">$129</span>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__hover">
+						<a href="product.html" class="arrow-right">
+							<img src="img/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<img src="img/product (3).png" alt="" class="product__img">
+					<h4 class="product__title">
+						Футболка USA
+					</h4>
+					<div class="cost-wrapper">
+						<span class="product__cost">$129</span>
+					</div>
+				</div>
+			</div>
+			<a href="" class="btn2 collection__btn">Открыть магазин</a>
+		</div>
+	</section>
+	<section class="importance">
+		<div class="container">
+			<h2 class="importance__title h2">
+				Что для нас важно
+			</h2>
+			<div class="card-wrapper">
+				<div class="card">
+					<img src="img/icon (1).svg" alt="" class="card__icon">
+					<h3 class="card__title h3">
+						Качество
+					</h3>
+					<p class="card__text">
+						Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества
+					</p>
+				</div>
+				<div class="card">
+					<img src="img/icon (2).svg" alt="" class="card__icon">
+					<h3 class="card__title h3">
+						Скорость
+					</h3>
+					<p class="card__text">
+						Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах
+					</p>
+				</div>
+				<div class="card">
+					<img src="img/icon (3).svg" alt="" class="card__icon">
+					<h3 class="card__title h3">
+						Ответственность
+					</h3>
+					<p class="card__text">
+						Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="dream-team">
+		<div class="container">
+			<h2 class="dream-team__title h2">
+				Команда мечты Womazing
+			</h2>
+			<div class="team-wrapper">
+				<div class="teamslider-wrapper">
+					<button type="button" class="teamslider-wrapper__prev">
+					 <img src="img/slider-arrow.png" alt="">
+					</button>
+					<img src="img/slider-img (3).png" alt="" class="teamslider-wrapper__slide active">
+					<img src="img/slider-img (2).png" alt="" class="teamslider-wrapper__slide ">
+					<img src="img/slider-img (1).png" alt="" class="teamslider-wrapper__slide ">
+					<button type="button" class="teamslider-wrapper__next">
+					 <img src="img/slider-arrow.png" alt="">
+					</button>
+					<div class="pagination">
+						<span class="pagination__item active"></span>
+						<span class="pagination__item"></span>
+						<span class="pagination__item"></span>
+					</div>
+				</div>
+				<div class="team-description">
+					<h4 class="team-description__title">Для каждой</h4>
+					<p class="team-description__text">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
+					<p class="team-description__text">
+							Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.
+					</p>
+					<a href="#" class="team-description__link">Подробнее о бренде</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="documentation">
+					<a href="index.html" class="documentation__logo">
+						<img src="img/logo.svg" alt="" >
+					</a>
+					<span class="documentation__rights">© Все права защищены</span>
+					<a href="#" class="documentation__link">Политика конфиденциальности</a>
+					<a href="#" class="documentation__link">Публичная оферта</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu-wrapper">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item menu__item_shop" >
+							<a href="shop.html">Магазин</a>
+							<ul class="shopmenu">
+								<li class="shopmenu__item">
+									<a href="">Пальто</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Свитшоты</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Кардиганы</a>
+								</li>
+								<li class="shopmenu__item">
+									<a href="">Толстовки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О бренде</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<a href="" class="contacts__number">
+						+7 (495) 823-54-12
+					</a>
+					<a href="" class="contacts__email">
+						hello@womazing.com
+					</a>
+					<div class="social">
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item" target="_blank">
+							<img src="img/social (3).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (2).svg" alt="">
+						</a>
+						<a href="#" rel="noreferrer noopener nofollow" class="social__item"  target="_blank">
+							<img src="img/social (1).svg" alt="">
+						</a>
+					</div>
+					<a href="#" rel="noreferrer noopener nofollow" class="contacts__pay"  target="_blank">
+						<img src="img/visa.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- JS here -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="js/parallax.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

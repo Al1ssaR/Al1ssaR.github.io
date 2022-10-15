@@ -1,0 +1,135 @@
+/* Specifications */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+.container{
+    position: relative;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* Header-top */
+.header{
+    padding-top: 40px;
+}
+.header-top{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 1660px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+.header-menu{
+    width: 455px;
+    margin-right: 67.5px;
+}
+.header-menu-list{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.header-top__logo{
+    margin-right: 556px;
+}
+.header-top__app-load{
+    display: flex;
+    align-items: center;
+    padding: 11px 56px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #556EE6;
+    border: 2px solid #556EE6;
+    border-radius: 15px;
+}
+.app-load_arrow{
+    margin-left: 8px;
+}
+
+/* Header-Main */
+
+.header-main{
+    overflow: hidden;
+    padding-top: 58px;
+    padding-bottom: 98px;
+    position: relative;
+    width: 1660px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 16px;
+    background: linear-gradient(178deg, #05132D 60.72%, #1B3A70 103.1%);
+}
+.header-offer__title{
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 74px;
+    color: #FFFFFF;
+}
+.header-title_black{
+    color: #2A3042;
+}
+.header-title_big{
+    display: block;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.header-offer__text{
+    width: 330px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+.text-space{
+    margin-left: 20px;
+}
+.header-offer__app-load{
+    padding: 11px 18px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #556EE6;
+}
+.header-main__img{
+    position: absolute;
+    bottom: 0;
+    right: -27px;
+}
+.header-main__dec_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-main__dec_bot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

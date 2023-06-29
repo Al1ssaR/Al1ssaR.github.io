@@ -1,0 +1,88 @@
+.btn-1{
+    display: block;
+    padding: 21px 37px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #F140D5 1.99%, #5451F9 47.05%, #8F21B6 100%);
+    box-shadow: 8px 8px 55px 0px rgba(255, 255, 255, 0.35);
+}
+
+
+.header-wrap{
+    margin-bottom: -207px;
+}
+.brand-story{
+    color: #F6F5F5;
+    padding-top: 330px;
+    padding-bottom: 47px;
+    background: url(../img/main-page/story-brand-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.story-title{
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-family: Neue Machina;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-bottom: 46px;
+}
+.story-text{
+    opacity: 0.8;
+    margin: 0 auto;
+    width: 1145px;
+    text-align: center;
+    font-size: 30px;
+    font-family: SF NS Mono;
+    font-weight: 300;
+    line-height: 120%;
+    margin-bottom: 60px;
+}
+.antarika-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.antarika-card__img{
+    width: 360px;
+    height: 450px;
+    margin: 0 auto;
+}
+.antarika-card{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.antarika-card__text{
+    display: flex;
+    align-items: center;
+    min-height: 265px;
+    opacity: 0.8;
+    text-align: center;
+    color: #F6F5F5;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 110%;
+}
+.antarika-card:first-child()>p{
+    margin-top: 86px;
+}
+.brand-follow{
+    margin: 105px 0px;
+    color: #BAF3FF;
+    text-align: center;
+    font-size: 33px;
+    font-family: SF NS Mono;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+.brand-discover{
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.arrow-down{
+    display: block;
+    margin: 0 auto;
+}

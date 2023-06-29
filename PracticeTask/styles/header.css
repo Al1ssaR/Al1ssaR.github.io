@@ -1,0 +1,105 @@
+/* Шрифты */
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Heavy.woff') format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Semibold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Ultrabold.woff') format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SF NS Mono';
+  src: url('../fonts/SFMono-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+/* Спецификация */
+a,li,ul{
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: transparent;
+}
+img {
+  all: unset;
+}
+button {
+  display: block;
+  all: unset;
+  cursor: pointer;
+}
+body{
+  font-size: 30px;
+  font-family: 'SF NS Mono';
+  font-style: normal;
+  font-weight: 300;
+}
+.container{
+ width: 1240px;
+ margin: 0 auto;
+}
+
+/* Хедер */
+.header{
+  padding-top: 35px;
+}
+.header-wrap{
+  display: flex;
+  align-items: center;
+}
+.header-logo>img{
+  width: 140px;
+  height: 160.714px;
+  flex-shrink: 0;
+}
+.header-menu{
+  display: flex;
+  margin-left: 120px;
+}
+.header-menu__item>a{
+  color: #FFF;
+  font-size: 30px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.header-menu__item:not(:last-child){
+  margin-right: 110px;
+}

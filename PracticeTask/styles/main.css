@@ -1,3 +1,14 @@
+/* Спецификация */
+body{
+    background: #FFFAF2;
+}
+.section-title{
+    font-size: 50px;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 .btn-1{
     display: block;
     padding: 21px 37px;
@@ -6,7 +17,7 @@
     box-shadow: 8px 8px 55px 0px rgba(255, 255, 255, 0.35);
 }
 
-
+/* Секция История бренда */
 .header-wrap{
     margin-bottom: -207px;
 }
@@ -21,11 +32,6 @@
 .story-title{
     text-align: center;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-size: 50px;
-    font-family: Neue Machina;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
     letter-spacing: 2px;
     margin-bottom: 46px;
 }
@@ -85,4 +91,174 @@
 .arrow-down{
     display: block;
     margin: 0 auto;
+}
+
+/* Секция Позиционирование бренда */
+.positioning{
+    padding-top: 80px;
+    padding-bottom: 135px;
+}
+.position-title{
+    color: #A81EFF;
+    text-align: center;
+}
+.pos-wrap__text{
+    width: 700px;
+    position: relative;
+    color: #9E9E9E;
+    font-size: 30px;
+    font-family: 'SF NS Mono';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.pos-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+.pos-wrap__text:not(:last-child){
+    margin-bottom: 80px;
+}
+.pos-wrap__text:nth-child(odd) {
+    float: left;
+    margin-left: 110px;
+    clear: left;
+}
+  
+.pos-wrap__text:nth-child(even) {
+    float: right;
+    margin-right: -20px;
+    clear: right;
+}
+.pos-wrap__text:first-child{
+    width: 1280px;
+    margin-left: -390px;
+    color: rgba(0, 0, 0, 0.97);
+    padding: 35px 75px 35px 505px;
+}
+.pos-wrap__text::before{
+    content: "";
+    position: absolute;
+    width: 132px;
+    height: 131px;
+    top: -12px;
+    left: -146px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/main-page/starmark2.svg);
+    background-size: cover;
+}
+.pos-wrap__text:first-child::before{
+    top: 52px;
+    left: 364px;
+    background-image: url(../img/main-page/starmark1.svg);
+
+}
+.pos-wrap__text:first-child::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100px;
+    border: 4px solid transparent;
+    background: linear-gradient(114deg,#835CF4,30%, #CB6B25,50%, #5498B6) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    box-shadow: 0px 20px 20px 0px rgba(255, 255, 255, 0.25);
+  
+}
+
+/* Секция Коллаборация */
+.collaboration{
+    padding-top: 135px;
+    padding-bottom: 105px;
+}
+.collab-title{
+    position: relative;
+    color: #E22998;
+    text-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.46);
+}
+.collab-title::before{
+    content: "";
+    position: absolute;
+    width: 272px;
+    height: 269px;
+    top: -70px;
+    left: -153px;
+    border-radius: 272px;
+    background: rgba(152, 224, 255, 0.90);
+    filter: blur(45px);
+    z-index: -1;
+}
+.collab-title::after{
+    content:"";
+    position: absolute;
+    width: 210px;
+    height: 191px;
+    right: -40px;
+    background-image: url(../img/main-page/star-collab.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.collab-wrap{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.collab-img{
+    height: 600px;
+}
+.collab-info__text{
+    position: relative;
+    margin-top:50px;
+    margin-bottom: 0px;
+    max-width: 760px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.collab-info__text:first-child::before{
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 320px;
+    right: 89px;
+    border-radius: 330px;
+    background: rgba(237, 255, 128, 0.90);
+    filter: blur(45px);
+    z-index: -1;
+}
+.collab-info__text:last-child::before{
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 198px;
+    left: 24px;
+    border-radius: 212px;
+    background: rgba(147, 216, 255, 0.51);
+    filter: blur(45px);
+    z-index: -1;
+}
+.collab-info__text:last-child::after{
+    content: "";
+    position: absolute;
+    width: 680.137px;
+    height: 166.7px;
+    top: -21px;
+    left: -71px;
+    transform: rotate(-6.432deg);
+    border-radius: 50%;
+    border: 2px solid rgba(132, 231, 223, 0.97);
+    z-index: -2;
+}
+.collab-info__text:last-child{
+    margin-top:100px;
+    max-width: 672px;
+}
+.comics-wrap{
+    margin-top: 120px;
 }

@@ -379,3 +379,69 @@ body{
 .info-text__link_tg{
     color:#62CFD6;
 }
+
+/* Секция Продажа */
+.selling{
+    overflow: hidden;
+    padding-top: 175px;
+    padding-bottom: 100px;
+}
+.sell-wrap{
+    position: relative;
+    padding-left: 120px;
+}
+.sell-wrap::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    top: -13px;
+    right: 31px;
+    background-image: url(../img/main-page/selling-sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.sell-wrap::after{
+    content: "";
+    position: absolute;
+    width: 1922.947px;
+    height: 707.893px;
+    top: -69px;
+    left: -540px;
+    transform: rotate(-0.036deg);
+    border-radius: 50%;
+    border: 1.5px solid #C200C6;
+    z-index: -2;
+}
+.sell-wrap__title{
+    max-width: 790px;
+    text-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.46);
+    line-height: 60px;
+    margin-bottom: 23px;
+}
+.sell-wrap__info{
+    max-width: 1064px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 55px;
+}
+.text-linebreak{
+    display: inline-block;
+}
+.sell-wrap__btn{
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Neue Machina";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.96px;
+}
+.mockups{
+    margin-top: 145px;
+    display: flex;
+    justify-content: space-between;
+}

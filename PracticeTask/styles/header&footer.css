@@ -110,3 +110,53 @@ body{
 .header-menu__item:not(:last-child){
   margin-right: 110px;
 }
+
+/* Футер */
+.footer{
+  border-top: 3px solid #FF83E4;
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.contacts__item{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #000;
+  font-family: SF NS Mono;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.contacts__item_email::before{
+  content: "";
+  width: 43px;
+  height: 43px;
+  margin-right: 13px;
+  display: inline-block;
+  background-image: url(../img/header&footer/mail.png);
+  background-size: contain;
+}
+.contacts__item_tel::before{
+  content: "";
+  width: 53px;
+  height: 53px;
+  margin-right: 13px;
+  display: inline-block;
+  background-image: url(../img/header&footer/tel.png);
+  background-size: contain;
+}
+.socials{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.socials__item:not(:last-child){
+  margin-right: 40px;
+}

@@ -11,12 +11,30 @@ body{
 }
 .btn-1{
     display: block;
+    cursor: pointer;
     padding: 21px 37px;
     border-radius: 50px;
     background: linear-gradient(90deg, #F140D5 1.99%, #5451F9 47.05%, #8F21B6 100%);
     box-shadow: 8px 8px 55px 0px rgba(255, 255, 255, 0.35);
 }
-
+video{
+    object-fit: cover;
+    cursor: pointer;
+}
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
 /* Секция История бренда */
 .header-wrap{
     margin-bottom: -207px;
@@ -84,12 +102,18 @@ body{
     font-weight: 500;
     line-height: 120%;
 }
+.btns-wrap{
+    display: flex;
+    flex-direction: column;
+}
 .brand-discover{
+    display: inline-block;
+    color: #FFF;
     margin: 0 auto;
     margin-bottom: 15px;
 }
 .arrow-down{
-    display: block;
+    display: inline-block;
     margin: 0 auto;
 }
 

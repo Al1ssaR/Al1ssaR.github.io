@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/header&footer.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
     <title>Антарика</title>
 </head>
 <body>
@@ -66,16 +68,18 @@
                 Следите за новыми выпусками комикса, 
                 чтобы узнать продолжение!
             </p>
-            <button class="btn-1 brand-discover">Исследовать</button>
-            <button class="arrow-down">
-                <img src="img/main-page/arrow.svg" alt="">
-            </button>
+            <div class="btns-wrap">
+                <a href="#position-title" class="btn-1 brand-discover">Исследовать</a>
+                <a href="#position-title" class="arrow-down">
+                    <img src="img/main-page/arrow.svg" alt="">
+                </a>
+            </div>
 
         </div>
     </section>
     <section class="positioning">
         <div class="container">
-            <h2 class="section-title position-title">
+            <h2 class="section-title position-title" id="position-title">
                 Позиционирование бренда
             </h2>
             <div class="pos-wrap">
@@ -121,7 +125,7 @@
             </div>
             <div class="comics-wrap">
                 <img src="img/main-page/comics.png" alt="" class="comics">
-                <video  class="comics-wrap__video" controls="controls" src="https://www.youtube.com/embed/ddsj0ND6t1s"></video>
+                <video  class="comics-wrap__video"  autoplay loop src="https://assets.mixkit.co/videos/preview/mixkit-tree-with-yellow-flowers-1173-large.mp4"></video>
             </div>
         </div>
     </section>
@@ -133,10 +137,10 @@
             <div class="video-cont-wrap">
                 <div class="slider-wrap">   
                     <div class="slider">
-                        <video  class="slide active" controls="controls" src="https://www.youtube.com/embed/ddsj0ND6t1s"></video>
-                        <video  class="slide" src=""></video>
-                        <video  class="slide" src=""></video>
-                        <video  class="slide" src=""></video>
+                        <video  class="slide active" autoplay loop src="https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4"></video>
+                        <video  class="slide" autoplay loop src="https://assets.mixkit.co/videos/preview/mixkit-palm-tree-in-front-of-the-sun-1191-large.mp4"></video>
+                        <video  class="slide" autoplay loop src="https://assets.mixkit.co/videos/preview/mixkit-under-a-peripheral-road-with-two-avenues-on-the-sides-34560-large.mp4"></video>
+                        <video  class="slide" autoplay loop src="https://assets.mixkit.co/videos/preview/mixkit-man-doing-pull-ups-wearing-face-mask-40157-large.mp4"></video>
                     </div>
                     <div class="progress-wrap">
                         <div class="slider-progress">
@@ -154,8 +158,8 @@
                 </div> 
                 <div class="video-info">
                     <div class="slider-btns">
-                        <button class="slider-btns__prev"><img src="/img/main-page/slider-btn.svg" alt=""></button>
-                        <button class="slider-btns__next"><img src="/img/main-page/slider-btn.svg" alt=""></button>
+                        <button class="slider-btns__prev"><img src="img/main-page/slider-btn.svg" alt=""></button>
+                        <button class="slider-btns__next"><img src="img/main-page/slider-btn.svg" alt=""></button>
                     </div>
                     <p class="video-info__text">
                         Наши ролики в вертикальном формате - это сторителлинг 

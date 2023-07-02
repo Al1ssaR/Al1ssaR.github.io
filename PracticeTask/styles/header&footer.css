@@ -56,7 +56,6 @@ a,li,ul{
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: transparent;
 }
 a:focus-visible{
   all: unset;

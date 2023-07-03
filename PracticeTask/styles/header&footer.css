@@ -159,3 +159,19 @@ body{
 .socials__item:not(:last-child){
   margin-right: 40px;
 }
+
+/* Адаптив */
+@media (max-width: 1240px){
+  .container{
+      width: 960px;
+  }
+  .header-menu{
+    margin-left: 47px;
+  }
+  .header-menu__item:not(:last-child) {
+    margin-right: 57px;
+  }
+  .footer{
+    padding-bottom: 59px;
+  }
+}

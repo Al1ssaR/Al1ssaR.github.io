@@ -469,3 +469,92 @@ video::-webkit-media-controls-volume-slider {
     display: flex;
     justify-content: space-between;
 }
+
+/* Адаптив */
+@media (max-width: 1400px){
+    .pos-wrap__text:nth-child(even){
+        margin-right: 0;
+    }
+    .collab-title::after{
+        right: 58px;
+    }
+    .video-info__text:last-child::before{
+        right: 0px;
+    }
+}
+@media (max-width: 1240px){
+    body{
+        font-size: 25px;
+    }
+    .story-text{
+        width: unset;
+        font-size: unset;
+    }
+    .antarika-card {
+        width: 450px;
+    }
+    .antarika-card__text{
+        font-size: 25px;
+    }
+    .antarika-card__img {
+        width: 345px;
+    }
+    .pos-wrap__text{
+        font-size: 25px;
+    }
+    .pos-wrap__text:nth-child(odd){
+        margin-left: 130px;
+    }
+    .pos-wrap__text:first-child{
+        margin-left: -375px;
+    }
+    .collab-wrap{
+        flex-direction: column;
+    }
+    .collab-wrap::before{
+        left: 227px;
+        bottom: 518px;
+    }
+    .collab-title {
+        text-align: center;
+    }
+    .collab-img{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .collab-info{
+        text-align: center;
+    }
+    .collab-info__text{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .comics-wrap {
+        flex-wrap: wrap;
+    }
+    .comics{
+        margin: 0 auto;
+    }
+    .comics-wrap__video {
+        margin: 0 auto;
+        width: 663px;
+    }
+    .video-info{
+        margin-left: 37px;
+    }
+    .video-info__text{
+        font-size: 25px;
+        width: unset;
+    }
+    .sell-wrap::before{
+        z-index: -1;
+        top: -105px;
+        right: 78px;
+    }
+    .mockups{
+        margin-top: 171px;
+    }
+    .mockups__item{
+        max-width: 308px;
+    }
+}

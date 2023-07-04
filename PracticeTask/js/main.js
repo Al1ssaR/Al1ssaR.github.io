@@ -56,8 +56,10 @@ function Slider(){
     slides.forEach((slide, index) => {
         if (index === currentIndex) {
         slide.classList.add('active');
+        slide.play();
         } else {
         slide.classList.remove('active');
+        slide.pause();
         }
     });
     counter.textContent = `${currentIndex + 1}`;

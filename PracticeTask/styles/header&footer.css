@@ -109,6 +109,13 @@ body{
 .header-menu__item:not(:last-child){
   margin-right: 110px;
 }
+.burger-menu{
+  display: none;
+}
+.burger-menu>img{
+  width: 80px;
+  height: 80px;
+}
 
 /* Футер */
 .footer{
@@ -174,4 +181,38 @@ body{
   .footer{
     padding-bottom: 59px;
   }
+}
+@media (max-width: 991px){
+  .container{
+      width: 720px;
+  }
+  .header-wrap{
+    position: relative;
+    justify-content: space-between;
+  }
+  .header-menu{
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 111px;
+    right: 67px;
+    transition: all 0.5s ease-out;
+  }
+  .header-menu.active{
+    visibility:visible;
+    opacity: 1;
+  }
+  .burger-menu{
+    display: block;
+  }
+}
+@media (max-width: 767px){ 
+  .container{
+  width: 540px;
+  padding: 0 15px;
+  }
+
 }

@@ -56,6 +56,21 @@ body{
 .categories__item.active{
     border-bottom: 4px solid #0400C9;
 }
+.shop-main{
+    position: relative;
+}
+.shop-main::before{
+    width: 585px;
+    height: 585px;
+    top: -305px;
+    left: -303px;
+    content: "";
+    position: absolute;
+    background-image: url(../img/shop/dec-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 .shop-main__show-all{
     max-width: 280px;
     margin-left: auto;
@@ -115,6 +130,7 @@ body{
 
 /* Секция галерея */
 .gallery{
+    overflow: hidden;
     padding-top: 65px;
     padding-bottom: 130px;
 }
@@ -128,8 +144,22 @@ body{
     letter-spacing: 1.8px;
 }
 .gallery-wrap{
+    position: relative;
     display: flex;
     justify-content: space-between;
+}
+.gallery-wrap::after{
+    content: "";
+    width: 660px;
+    height: 660px;
+    top: -20px;
+    right: -396px;
+    content: "";
+    position: absolute;
+    background-image: url(../img/shop/dec-bot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 .gallery-wrap__img{
     max-width: 300px;
@@ -142,6 +172,7 @@ body{
     font-weight: 500;
     line-height: 120%;
 }
+
 .footer{
     border-top: 3px solid #0400C9;
 }
@@ -216,6 +247,10 @@ body{
     }
     .gallery-wrap{
         row-gap: 30px;
+    }
+    .gallery-wrap::after{
+        left: -30px;
+        top: -103px;
     }
     .product-title>h3{
         font-size: 22px;

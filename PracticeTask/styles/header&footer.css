@@ -259,6 +259,14 @@ body{
   .header-menu__item:not(:last-child){
     margin-right: unset;
   }
+  .header-menu__cart>img {
+    width: 43px;
+    height: 43px;
+  }
+  .header-menu__cart::after {
+    width: 90px;
+    height: 90px;
+  }
   .header-menu{
     right: 0px;
   }

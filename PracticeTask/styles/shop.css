@@ -1,7 +1,9 @@
+/* Спецификация */
 body{
     font-size: 30px;
 }
 
+/* Верхняя секция */
 .header-wrap{
     margin-bottom: -207px;
 }
@@ -11,6 +13,7 @@ body{
     background-image: url(../img/shop/header-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center bottom;
 }
 .shop-head-wrap{
     text-align: center;
@@ -30,6 +33,7 @@ body{
     box-shadow: 8px 8px 50px 0px #FFF;
 }
 
+/* Секция Магазин */
 .shop{
     padding-top: 70px;
     padding-bottom: 60px;
@@ -108,6 +112,8 @@ body{
 .shop-pagination__page.active a{
     color: #FFF;
 }
+
+/* Секция галерея */
 .gallery{
     padding-top: 65px;
     padding-bottom: 130px;
@@ -144,4 +150,77 @@ body{
 }
 .contacts__item_tel::before{
     background-image: url(../img/header&footer/tel-style-2.png);
+}
+@media (max-width: 1240px){
+ .gallery-wrap__img{
+    max-width: 220px;
+ }
+}
+@media (max-width: 991px){
+    .categories{
+      width: 600px;
+    }
+    .products{
+        grid-template-columns: repeat(auto-fill, 274px);
+    }
+    .product-img>img{
+        width: 270px;
+    }
+    .gallery-title{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .gallery-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 220px);
+        justify-content: center;
+        justify-items: center;
+        column-gap: 59px;
+        row-gap: 60px;
+        margin: 0 auto;
+    }
+    .gallery-text {
+        text-align: center;
+    }
+}
+@media (max-width: 767px){ 
+    .categories{
+        width: 100%;
+    }
+    .product-img>img {
+        width: 370px;
+    }
+}
+@media (max-width: 575px){ 
+    body{
+        font-size: 18px;
+    }
+    .header-menu{
+        top: 174px;
+        right: 120px;
+    }
+    .header-menu.active{
+        margin-left: unset;
+    }
+    .news-link{
+        font-size: 25px;
+    }
+    .categories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .gallery-title{
+        font-size: 30px;
+    }
+    .gallery-wrap{
+        row-gap: 30px;
+    }
+    .product-title>h3{
+        font-size: 22px;
+    }
+    .product-img>img {
+        width: 280px;
+    }
 }

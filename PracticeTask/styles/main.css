@@ -711,3 +711,89 @@ video::-webkit-media-controls-volume-slider {
         margin-bottom: 25px;
     }
 }
+@media (max-width: 575px){ 
+    body{
+        font-size: 18px;
+    }
+    .section-title {
+        font-size: 27px;
+    }
+    .antarika-card{
+        width: 100%;
+    }
+    .antarika-card__img{
+        width: 100%;
+        height: unset;
+    }
+    .brand-follow{
+        font-size: 20px;
+    }
+    .pos-wrap__text{
+        line-height: 25px;
+    }
+    .pos-wrap__text:first-child{
+        padding: 20px 20px 20px 120px;
+    }
+    .pos-wrap__text::before{
+        width: 91px;
+        height: 101px;
+        top: 0px;
+        left: -101px;
+    }
+    .pos-wrap__text:first-child::before{
+        top: 17px;
+        left: 20px;
+    }
+    .pos-wrap__text:nth-child(even) {
+        margin-left: 116px;
+    }
+    .pos-wrap__text:nth-child(odd) {
+        margin-left: 116px;
+    }
+    .pos-wrap__text:first-child{
+        margin-left: unset;
+    }
+    .collab-title::after{
+        top: -143px;
+        width: 164px;
+        height: 191px;
+    }
+    .collab-img{
+        width: 100%;
+    }
+    .collab-info__text{
+        line-height: 27px;
+    }
+    .comics{
+        width: 100%;
+    }
+    .comics-wrap__video{
+        width: 100%;
+        height: unset;
+    }
+    .video-title::after {
+        top: -176px;
+    }
+    .video-info{
+        margin-left: 0px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .video-info__text{
+        line-height: 27px;
+    }
+    .sell-wrap::after{
+        height: 775.893px;
+    }
+    .sell-wrap::before{
+        top: -135px;
+    }
+    .sell-wrap__info{
+        text-align: center;
+    }
+    .mockups{
+        margin-top: 200px;
+    }
+    
+}

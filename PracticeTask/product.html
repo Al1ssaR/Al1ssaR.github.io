@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/header&footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/product.css">
+        <!-- JS -->
+        <script src="js/header.js" defer></script>
+        <title>Антарика</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <a href="main.html" class="header-logo">
+                    <img src="img/header&footer/logo.png" alt="">
+                </a>
+                <nav>
+                    <ul class="header-menu">
+                        <li class="header-menu__item"><a href="main.html">О Бренде</a></li>
+                        <li class="header-menu__item"><a href="">Услуги</a></li>
+                        <li class="header-menu__item"><a href="">Контакты</a></li>
+                        <li class="header-menu__item"><a href="shop.html">Магазин</a></li>    
+                    </ul>
+                </nav>
+                <button class="burger-menu">
+                    <img src="img/header&footer/burger-btn.png" alt="">
+                </button>
+                <button type="button" class="header-menu__cart">
+                    <img src="img/cart-btn.svg" alt="">
+                    <span class="cart-count">
+                        1
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <button type="button" class="modal__close">
+                <img src="img/close-modal.svg" alt="">
+            </button>
+            <div class="modal-content">
+                <h2 class="modal-content__title">
+                    Ваш заказ:
+                </h2>
+                <div class="modal-products">
+                    <div class="modal-product">
+                        <div class="modal-product__photo"></div>
+                        <div class="modal-details">
+                            <h3 class="modal-details__title">
+                                Футболка принт
+                            </h3>
+                            <span class="modal-details__size">
+                                Размер: M
+                            </span>
+                            <div class="count-change">
+                                <button class="count-change__btn count-change__btn_minus">-</button>
+                                <span class="count-change__count">1</span>
+                                <button class="count-change__btn count-change__btn_plus">+</button>
+                            </div>
+                        </div>
+                        <span class="modal-product__price">
+                            1299 р.
+                        </span>
+                        <button class="modal-product__delete">
+                            <img src="img/delete.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </header>
+    <section class="product">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__link">
+                    Футболки
+                </a>
+                <a href="" class="breadcrumbs__link">
+                    Футболка принт
+                </a>
+            </div>
+            <div class="product-wrap">
+                <div class="product-photos">
+                    <img src="/img/product/product1.png" alt="" class="product-photos__item">
+                    <img src="/img/product/product2.png" alt="" class="product-photos__item">
+                </div>
+                <div class="product-info">
+                    <div class="details">
+                        <span class="details__new">
+                            new
+                        </span>
+                        <h3 class="details__title">
+                            Футболка принт
+                        </h3>
+                        <span class="details__price">1299 Р</span>
+                        <span class="details__size">
+                            Размер
+                        </span>
+                        <div class="size-change">
+                            <button type="button" class="size-change__btn active">xs</button>
+                            <button type="button" class="size-change__btn out-of-stock">s</button>
+                            <button type="button" class="size-change__btn">m</button>
+                            <button type="button" class="size-change__btn">ml</button>
+                        </div>
+                        <span class="details__count">
+                            Количество
+                        </span>
+                        <div class="count-change">
+                            <button class="count-change__btn count-change__btn_minus">-</button>
+                            <span class="count-change__count">1</span>
+                            <button class="count-change__btn count-change__btn_plus">+</button>
+                        </div>
+                        <button type="button" class="details__cart-add">Добавить в корзину</button>
+                    </div>
+                    <div class="description">
+                        <h4 class="description__title">
+                            Описание
+                        </h4>
+                        <p class="description__text">
+                            Футболка с принтом It is a long established fact that a reader 
+                            will be distracted by the readable content of a page when 
+                            looking at its layout. The point of using Lorem Ipsum is 
+                            that it has a more-or-less normal distribution of letters, 
+                            as opposed to using 'Content here, content here', making it 
+                            look like readable English
+                        </p>
+                        <ul class="description-list">
+                            <li class="description-list__item">
+                                Many desktop publishing packages
+                            </li>
+                            <li class="description-list__item">
+                                Many desktop publishing packages
+                            </li>
+                            <li class="description-list__item">
+                                Many desktop publishing packages
+                            </li>
+                        </ul>
+                        <p class="description__country">
+                            <span class="description-black">
+                                Страна производства:
+                            </span>
+                             Россия
+                        </p>
+                        <p class="description__structure">
+                            <span class="description-black">
+                                Состав:
+                            </span>
+                             100% хлопок
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recommendations">
+        <div class="container">
+            <div class="recommend-top">
+                <a href="" class="recommend-top__title active">С ЭТИМ ТОВАРОМ РЕКОМЕНДУЕМ</a>
+                <a href="" class="recommend-top__title">ПРОСМОТРЕННЫЕ ТОВАРЫ</a>
+                <div class="btns-wrap">
+                    <button type="button" class="btns-wrap__prev">
+                        <img src="img/product/next-prev.svg" alt="">
+                    </button>
+                    <button type="button" class="btns-wrap__next">
+                        <img src="img/product/next-prev.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="recommend-main">
+                <div class="recommend-item">
+                    <a href="" class="recommend-img">
+                        <img src="img/product/recommend (1).png" alt="" >
+                    </a>
+                    <a href="" class="recommend-title">
+                        <h4>Рюкзак</h4>
+                    </a>
+                    <span class="recommend-price">
+                        1500р
+                    </span>
+                </div>
+                <div class="recommend-item">
+                    <a href="" class="recommend-img">
+                        <img src="img/product/recommend (2).png" alt="" >
+                    </a>
+                    <a href="" class="recommend-title">
+                        <h4>Чехол на телефона</h4>
+                    </a>
+                    <span class="recommend-price">
+                        1500р
+                    </span>
+                </div>
+                <div class="recommend-item">
+                    <a href="" class="recommend-img">
+                        <img src="img/product/recommend (3).png" alt="" >
+                    </a>
+                    <a href="" class="recommend-title">
+                        <h4>Чехол на ноутбук</h4>
+                    </a>
+                    <span class="recommend-price">
+                        1500р
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="contacts">
+                <a href="" class="contacts__item contacts__item_email">
+                    antarikacosmo@gmail.com
+                </a>
+                <a href="" class="contacts__item contacts__item_tel">
+                    +7 915 057-7-88
+                </a>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a rel = "noopener noreferrer" target="_blank" href="">
+                            <img src="img/header&footer/inst.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a rel = "noopener noreferrer" target="_blank" href="">
+                            <img src="img/header&footer/tg.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a rel = "noopener noreferrer" target="_blank" href="">
+                            <img src="img/header&footer/vk.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

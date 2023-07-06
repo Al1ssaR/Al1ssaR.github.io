@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="styles/product.css">
         <!-- JS -->
         <script src="js/header.js" defer></script>
+        <script src="js/modal.js" defer></script>
         <title>Антарика</title>
     </head>
 <body>
@@ -74,6 +75,59 @@
                         </button>
                     </div>
                 </div>
+                <div class="modal-total-wrap">
+                    <span class="total-title">
+                        Итого:
+                    </span>
+                    <span class="total-price">
+                        1299 p.
+                    </span>
+                </div>
+                <form class="modal-form" id="myForm">
+                    <label class="modal-form__label" for="name">Ваше имя:</label>
+                    <input class="modal-form__input" type="text" id="name" name="name" >
+                  
+                    <label class="modal-form__label" for="email">Email:</label>
+                    <input class="modal-form__input" type="email" id="email" name="email" >
+                  
+                    <label class="modal-form__label" for="phone">Номер телефона:</label>
+                    <input class="modal-form__input" type="tel" id="phone" name="phone" >
+                  
+                    <label class="modal-form__label" for="country">Страна:</label>
+                    <input class="modal-form__input" type="text" id="country" name="country" >
+                  
+                    <label class="modal-form__label" for="region">Регион:</label>
+                    <input class="modal-form__input" type="text" id="region" name="region" >
+                  
+                    
+                    <span class="checkbox-title">
+                        Доставка:
+                    </span>
+                    <div class="checkbox-wrap">
+                        <input class="form-checkbox" type="radio"  id="courier" name="delivery" value="courier" checked="true">
+                        <label for="courier">Курьером по Москве (2 рабочих дня): 300₽</label>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input class="form-checkbox" type="radio"  id="pickup" name="delivery" value="pickup">
+                        <label for="pickup">В пункт выдачи СДЭК (2 рабочих дня): 154₽</label>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input class="form-checkbox" type="radio"  id="self-pickup" name="delivery" value="self-pickup">
+                        <label for="self-pickup">Самовывоз</label>
+                    </div>
+                    <span class="checkbox-title">
+                        Оплата:
+                    </span>
+                    <div class="checkbox-wrap">
+                        <input class="form-checkbox" type="radio" id="card" name="payment" value="card" checked>
+                        <label for="card">Оплата банковской картой на сайте</label>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input class="form-checkbox" type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Оплата при получении</label>
+                    </div>
+                    <button class="modal-form__submit disabled" type="submit" id="submitBtn" disabled>Оформить заказ</button>
+                  </form>
             </div>
           </div>
     </header>
@@ -89,8 +143,8 @@
             </div>
             <div class="product-wrap">
                 <div class="product-photos">
-                    <img src="/img/product/product1.png" alt="" class="product-photos__item">
-                    <img src="/img/product/product2.png" alt="" class="product-photos__item">
+                    <img src="img/product/product1.png" alt="" class="product-photos__item">
+                    <img src="img/product/product2.png" alt="" class="product-photos__item">
                 </div>
                 <div class="product-info">
                     <div class="details">

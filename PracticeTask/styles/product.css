@@ -167,6 +167,7 @@ body{
     margin-right: 20px;
     padding-bottom: 15px;
     letter-spacing: 2.95px;
+    border-bottom: 4px solid #EFEFEF;
 }
 .recommend-top__title.active{
     border-bottom: 4px solid #0400C9;
@@ -277,7 +278,7 @@ body{
         top: 174px;
         right: 120px;
     }
-    .header-menu.active{
+    .header-menu{
         margin-left: unset;
     }
     .product {

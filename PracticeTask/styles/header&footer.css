@@ -75,6 +75,10 @@ body{
   font-style: normal;
   font-weight: 300;
 }
+body.fixed{
+  overflow:hidden;
+  padding-right: 16px;
+}
 .container{
  width: 1240px;
  margin: 0 auto;
@@ -190,14 +194,18 @@ body{
   display: block;
 }
 .modal-content{
+  overflow: hidden;
+  position: relative;
   font-family: SF NS Mono;
   font-size: 22px;
   font-weight: 400;
   width: 650px;
   margin: 0 auto;
   margin-top: 135px;
+  margin-bottom: 50px;
   padding: 40px 40px 55px 40px;
   background: #FFF;
+  z-index: 1001;
 }
 .modal-content__title{
   color: #000;
@@ -207,7 +215,17 @@ body{
   line-height: 120%;
   margin-bottom: 40px;
 }
+.modal-products{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-top: 1px solid #B1B1B1;
+  border-bottom: 1px solid #B1B1B1;
+}
 .modal-product{
+  width: 570px;
   display: flex;
   align-items: center;
 }
@@ -243,7 +261,102 @@ body{
 .modal-product__delete{
   margin-left: auto;
 }
-
+.modal-total-wrap{
+  margin-top: 20px;
+  margin-bottom: 45px;
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+}
+.total-title{
+  display: block;
+  font-weight: 600;
+}
+.total-price{
+  display: block;
+  font-weight: 500;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+.modal-form__label{
+  margin-bottom: 10px;
+}
+.modal-form__input{
+  all: unset;
+  border: 1px solid #B1B1B1;
+  height: 50px;
+  font-size: 22px;
+  padding-left: 5px;
+  margin-bottom: 25px;
+}
+.modal-form__input.invalid{
+  border: 1px solid red;
+}
+.checkbox-wrap{
+  margin-bottom: 15px;
+}
+.checkbox-wrap>label{
+  color: #000;
+  font-family:"SF NS Mono";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.checkbox-title{
+  display: block;
+  color: #000;
+  font-family: "SF NS Mono";
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.form-checkbox{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.form-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.form-checkbox+label::before {
+  cursor: pointer;
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #FF8B20;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.form-checkbox:checked+label::before {
+  background-image: url("../img/modal-checkbox.svg");
+}
+.modal-form__submit{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 320px;
+  border: 3px solid #FF8B20;
+  text-transform: uppercase;
+  padding: 19px 40px;
+  color: #0F0F0F;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 600;
+  line-height: normal;
+}
+.modal-form__submit.disabled{
+  opacity: 0.4;
+}
 
 /* Футер */
 .footer{
@@ -314,6 +427,9 @@ body{
   .container{
       width: 720px;
   }
+  body.fixed{
+    padding-right: 0;
+  }
   .header-wrap{
     position: relative;
     justify-content: space-between;
@@ -327,7 +443,7 @@ body{
     position: absolute;
     top: 111px;
     right: 67px;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
   .header-menu.active{
     visibility:visible;
@@ -341,6 +457,9 @@ body{
   .container{
   width: 540px;
   padding: 0 15px;
+  }
+  .modal-content{
+    width: 523px;
   }
 }
 @media (max-width: 575px){ 
@@ -360,6 +479,16 @@ body{
   }
   .header-menu{
     right: 0px;
+  }
+  .modal__close{
+    margin-right: 20px;
+  }
+  .modal-content{
+    width: 90%;
+    font-size: 18px;
+  }
+  .checkbox-wrap>label {
+    font-size: 18px;
   }
   .contacts__item_email::before{
     width: 30px;

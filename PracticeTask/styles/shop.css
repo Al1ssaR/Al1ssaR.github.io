@@ -230,7 +230,7 @@ body{
         top: 174px;
         right: 120px;
     }
-    .header-menu.active{
+    .header-menu{
         margin-left: unset;
     }
     .news-link{

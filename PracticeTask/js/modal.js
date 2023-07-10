@@ -22,7 +22,6 @@ const form = document.getElementById('myForm');
 const submitBtn = document.getElementById('submitBtn');
 const inputs = form.querySelectorAll('.modal-form__input');
 
-// Функция для проверки всех инпутов
 function checkInputs() {
   let allFilled = true;
   inputs.forEach(input => {

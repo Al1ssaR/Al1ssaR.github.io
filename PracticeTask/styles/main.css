@@ -182,6 +182,7 @@ video::-webkit-media-controls-volume-slider {
 }
 .pos-wrap__text:first-child::after{
     content: "";
+    z-index: -2;
     position: absolute;
     top: 0;
     left: 0;

@@ -20,40 +20,41 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/template.css">
+<link rel="stylesheet" href="css/main/main.css">
 </head>
 <body>
 	<header class="header">
 		<div class="nav">
 			<div class="container">
 				<div class="menu-wrapper">
-					<a href="" class="menu-wrapper__logo">
+					<a href="index.html" class="menu-wrapper__logo">
 					<img src="img/logo.svg" alt="DreamCode">
 					</a>
 					<nav class="menu">
 						<ul class="menu__list ">
-							<li class="menu__item menu__item_active">
-								<a href="#">
+							<li class="menu__item ">
+								<a href="index.html">
 									Главная
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">
+								<a href="#projects">
 									Наши проекты
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">
+								<a href="#services">
 									Услуги
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">
-									Новости
+								<a href="about.html">
+									О нас 
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">
+								<a href="contacts.html">
 									Контакты
 								</a>
 							</li>
@@ -74,7 +75,7 @@
 					<p class="offer__info">
 						Откуда берутся идеи? В нашей компании их полно! Реализуем любую, потому что любим это дело
 					</p>
-					<a href="#" class="offer__btn btn">
+					<a href="#projects" class="offer__btn btn">
 						Наши проекты
 					</a>
 					<a href="" class="offer__arrow">
@@ -84,7 +85,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<h2 class="services-title h2">
 				Постройте бизнес онлайн с помощью сайта
@@ -146,12 +147,12 @@
 						</div>	
 					</div>
 				</div>
-			<a href="#" class="services-btn btn">
+			<a href="#projects" class="services-btn btn">
 				Все услуги
 			</a>	
 		</div>	
 	</section>
-	<section class="all-projects">
+	<section class="all-projects" id="projects">
 		<div class="container">
 			<h2 class="projects-title h2">
 				Наши проекты

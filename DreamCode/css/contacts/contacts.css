@@ -1,0 +1,25 @@
+.contact-with{
+    padding-top: 75px;
+    padding-bottom: 125px;
+}
+.map-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact__title{
+    font-size: 20px;
+}
+.contact__item{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.schedule{
+    margin-top: 20px;
+    font-size: 18px;
+}

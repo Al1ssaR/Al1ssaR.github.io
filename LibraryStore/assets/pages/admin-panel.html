@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/admin-panel.css" media="all" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/header and footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../photos/admin tab icon.png" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+    <title> Admin Panel | Library Book Store</title>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <div class="row p-0 m-0" id="adminPanel">
+        <!-- Admin Menu  section starts-->
+        <div class="col-md-3 col-xl-2 px-2 admin-menu-bar">
+          <section id="admin-panel-menu">
+            <div class="p-0 position-fixed mx-4">
+              <a href="admin-panel.html" class="">
+                <img
+                  class="img-fluid mt-5"
+                  src="../photos/admin logo.png"
+                  alt=""
+                />
+              </a>
+
+              <a
+                href="#add-book"
+                class="d-flex align-items-center text-white mt-5 py-2 w-50"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Главная </span>
+              </a>
+
+              <a
+                href="#about-store"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> О нас </span>
+              </a>
+              <a
+                href="#join-us"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Пользователи </span>
+              </a>
+              <a
+                href="#contact-us"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Контакты </span>
+              </a>
+
+              <a
+                href="admin-login.html"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+                id=""
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span id="adminLogout"> Выйти </span>
+              </a>
+            </div>
+          </section>
+
+
+          <section id="admin-panel-menuForMobile" >
+            <div class="ps-3 ps-md-5 position-fixed" style="height: 100%; background-color: #68141b; width: 80%;">
+              <a  href="admin-panel.html" class="">
+                <img
+                  class="img-fluid mt-5"
+                  src="../photos/admin logo.png"
+                  alt=""
+                />
+              </a>
+  
+              <a
+                href="#add-book"
+                class="d-flex align-items-center text-white mt-5 py-2 w-50"
+                id="homeForMobile"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Главная </span>
+              </a>
+  
+              <a
+                href="#about-store"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+                id="aboutForMobile"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> О нас </span>
+              </a>
+              <a
+                href="#join-us"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+                id="joinUsForMobile"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Пользователи </span>
+              </a>
+              <a
+                href="#contact-us"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+                id="contactForMobile"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span> Контакты </span>
+              </a>
+  
+              <a
+                href="admin-login.html"
+                class="d-flex align-items-center text-white mt-2 py-2 w-50"
+                id="logoutForMobile"
+              >
+                <img
+                  width="30"
+                  class="img-fluid me-3"
+                  src="../photos/admin book.png"
+                  alt=""
+                />
+                <span id="adminLogout"> Выйти </span>
+              </a>
+            </div>
+  
+          </section>
+
+
+        </div>
+
+        <!-- Admin Menu  section ends-->
+
+        <!-- Admin context section starts -->
+        <div class="col-12 col-md-9 col-xl-10 m-0">
+          
+                   <div class="row mx-0 ms-xl-2">
+          <!-- Admin header  starts-->
+          <div class="col-md-12 mb-5 adminHeader">
+            <div class="d-flex justify-content-end mt-5 mx-5">
+              <div class="d-flex align-items-center mt-1">
+                <img
+                  src="../photos/Profile.png"
+                  class="img-fluid me-2"
+                  alt=""
+                />
+                <span class="admin-name">Админ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Admin header  ends-->
+
+           <!-- admin header for mobile starts-->
+           <div class="col-md-12 mb-5 adminHeaderMobile">
+            <div class="d-flex justify-content-between mt-5 mx-2 align-items-center">
+              <div class="col-8 col-sm-6 col-md-6 col-lg-6">
+                <a href="admin-panel.html" class="">
+                  <img 
+                  
+                    class="img-fluid w-100"
+                    src="../photos/mobile-hader.jpeg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mt-1">
+                  <i id="menuIconForMobile" style="font-size: 20px;" class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- admin header for mobile ends-->
+
+
+            <!-- Admin body -->
+            <div class="col-md-12">
+           
+              <div class="row w-100 m-0">
+                <!-- Search book section -->
+                <div class="col-md-12">
+                  <div class="admin-add-book mb-4" id="add-book">
+                    <h1>Добавить книгу</h1>
+                  </div>
+                  <!-- Search Book -->
+                  <div class="search-book-section mb-5">
+                    <div class="mb-3 admin-add-book fs-18">
+                      <h1>Поиск книги</h1>
+                    </div>
+                    <div class="ser col-xl-5">
+                      <!-- Search input group -->
+                      <div
+                        class="form-group d-flex w-100 align-items-center"
+                      >
+                        <input
+                          type="text"
+                          id="searchAdminInput"
+                          placeholder="Search Book"
+                          class="admin-search-input px-3 py-2 w-100"
+                          placeholder=""
+                          aria-describedby="helpId"
+                          value=""
+                        />
+
+                        <a class="" id="btnSearch">
+                          <img
+                            src="../photos/Confirm Button.png"
+                            class="ms-2"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div
+                      class="alert alert-danger mt-4 search-join-error"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Error</h4>
+                      <p></p>
+                      <p id="errorBookP" class="mb-0">Поиск не может быть пустым</p>
+                    </div>
+
+                    <div
+                      class="alert alert-success mt-4 search-join-success"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Успех</h4>
+                      <p></p>
+                      <p class="mb-0">Даные успешно добавлены</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add Book -->
+                <section class="mb-5">
+                  <div class="col-md-10 mb-5">
+                    <div class="mb-3 admin-add-book fs-18">
+                      <h1>Форма добавления книги</h1>
+                    </div>
+                    <form class="admin-book-form p-2 p-md-5">
+                      <div class="mb-3">
+                        <label for="bookName" class="form-label mb-3"
+                          >Название книги</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="bookName"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="authorName" class="form-label mb-3"
+                          >Автор</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="authorName"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="authorName" class="form-label mb-3"
+                          >Дата выпуска</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control mb-4"
+                          id="publishDate"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="bookImageUrl" class="form-label mb-3"
+                          >Ссылка на изображение</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="bookImageUrl"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="bookDescription" class="form-label mb-3"
+                          >Описание</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="bookDescription"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="bookType" class="form-label mb-3"
+                          >Жанр</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="bookType"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="bookType" class="form-label mb-3"
+                          >Рейтинг (0-5)</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control mb-4"
+                          id="averageRating"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="bookType" class="form-label mb-3"
+                          >Цена (руб)</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control mb-4"
+                          id="price"
+                          aria-describedby="nameHelp"
+                          value=""
+                        />
+                      </div>
+                      <div
+                      class="alert alert-danger mt-4 add-join-error"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Error</h4>
+                      <p></p>
+                      <p id="errorBookP" class="mb-0">Проверьте форму</p>
+                    </div>
+
+                    <div
+                      class="alert alert-success mt-4 add-join-success"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Успешно</h4>
+                      <p></p>
+                      <p class="mb-0">Данные добавлены</p>
+                    </div>
+
+
+                      <button type="submit" class="buton w-100 mt-5 py-2"  id="btnAdd">
+                        Добавить
+                      </button>
+                    </form>
+                  </div>
+                </section>
+
+
+
+
+                <div class="col-md-12 mt-5">
+                  <div class="admin-add-book mb-4" id="about-store">
+                    <h1>О магазине</h1>
+                  </div>
+                </div>
+
+                <section>
+                  <div class="col-md-10 mb-5">
+                    <form class="admin-book-form p-2 p-md-5">
+                      <div class="mb-3">
+                        <label for="nameInputTitle" class="form-label mb-3"
+                          >Название</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="nameInputTitle"
+                          aria-describedby="nameHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="nameInputUrl" class="form-label mb-3"
+                          >Image Url</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="nameInputUrl"
+                          aria-describedby="nameHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="nameInputDesc" class="form-label mb-3"
+                          >Описание</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          id="nameInputDesc"
+                          aria-describedby="nameHelp"
+                        />
+                      </div>
+                      
+                      <div
+                      class="alert alert-danger mt-4 join-error"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Error</h4>
+                      <p></p>
+                      <p id="errorBookP" class="mb-0">Проверьте форму</p>
+                    </div>
+
+                    <div
+                      class="alert alert-success mt-4 join-success"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Успешно</h4>
+                      <p></p>
+                      <p class="mb-0">Данные успешно добавлены</p>
+                    </div>
+
+                      <button type="submit" class="buton w-100 mt-5 py-2" id="admin-about-store">
+                        добавить
+                      </button>
+                    </form>
+                  </div>
+                </section>
+                <div class="col-6">
+                  <!-- Форма для регистрации администратора -->
+                  <h1 class="mb-2">Форма регистрации админа</h1>
+                  <form class="d-flex admin-book-form p-2 p-md-5" style="flex-direction: column;" id="admin-register-form">
+                    
+                    <input class="form-control mb-3" type="email" id="admin-email" placeholder="Email" required>
+                    <input class="form-control mb-3" type="password" id="admin-password" placeholder="Password" required>
+                    <button class="buton pt-1 pb-1" type="submit">Зарегистрировать</button>
+                  </form>
+                </div>
+                <!-- Join  Us section -->
+                <div class="col-md-12 my-5">
+                  <div class="admin-add-book mb-4 mt-5" id="join-us">
+                    <h1>Пользователи</h1>
+                  </div>
+                  <div style="overflow-x:auto;">
+                  <table class="table w-50 text-center">
+                    <thead class="bg-thead text-white">
+                      <tr>
+                        <th scope="col" class="">#</th>
+                        <th scope="col">ФИО</th>
+                        <th scope="col">Email</th>
+                      </tr>
+                    </thead>
+                    <tbody id="joinTable" class="bg-tbody">
+                  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+              
+                <!-- Contact  Us section -->
+               
+                <div class="col-md-10 mb-5 mt-5">
+                  <div class="admin-add-book mb-4 mt-5" id="contact-us">
+                    <h1>Заказы</h1>
+                  </div>
+                  <div style="overflow-x:auto;">
+                  <table class="table text-center">
+                    <thead class="bg-thead text-white">
+                      <tr>
+                        <th scope="col" class="">#</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Адрес</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Номер телефона</th>
+                        <th scope="col">Название книги</th>
+                        <th scope="col">Цена книги (руб)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="contactTable" class="bg-tbody">
+                      <tr>
+                        <th scope="row" class="">1</th>
+                        <td>Eldaniz Akbarzade</td>
+                        <td>Surakhani</td>
+                        <td>eldenizekber@gmail.com</td>
+                        <td>+994503404618</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="">1</th>
+                        <td>Eldaniz Akbarzade</td>
+                        <td>Surakhani</td>
+                        <td>eldenizekber@gmail.com</td>
+                        <td>+994503404618</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="">1</th>
+                        <td>Eldaniz Akbarzade</td>
+                        <td>Surakhani</td>
+                        <td>eldenizekber@gmail.com</td>
+                        <td>+994503404618</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="">1</th>
+                        <td>Eldaniz Akbarzade</td>
+                        <td>Surakhani</td>
+                        <td>eldenizekber@gmail.com</td>
+                        <td>+994503404618</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="">1</th>
+                        <td>Eldaniz Akbarzade</td>
+                        <td>Surakhani</td>
+                        <td>eldenizekber@gmail.com</td>
+                        <td>+994503404618</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               <!-- Join  Us section -->
+               <div class="col-md-12 my-5 admin-add-book">
+                <h1 class="mt-2 ">Посещения</h1>
+                <table class="table" id="logsTable">
+                  <thead class="bg-thead text-white" >
+                      <tr>
+                          <th>ID пользователя</th>
+                          <th>ID Сессии</th>
+                          <th>Название страницы</th>
+                          <th style="cursor: pointer;" id="timestampHeader">Время посещения</th>
+                          <th style="cursor: pointer;" id="sessionTimestampHeader">Начало Сессии</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  
+                      
+                  </tbody>
+              </table>
+              <h1 class="mt-2">Отказы</h1>
+              <table class="table" id="logsTableBounce">
+                  <thead class="bg-thead text-white">
+                      <tr>
+                          <th>ID пользователя</th>
+                          <th>ID Сессии</th> 
+                      </tr>
+                  </thead>
+                  <tbody class="bg-tbody">
+                  
+                      
+                  </tbody>
+              </table>
+            </div>
+            <div class="col-md-12 my-5 admin-add-book">
+              <div class="chart-container" width="400" height="400" style="width: 400px; margin: 0 auto;">
+                <h2 style="text-align: center;">Процент Отказов</h2>
+                <p style="text-align: center;" id="bounceRate"></p>
+            <canvas id="bounceChart" width="400px" height="400px"></canvas>
+            </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="../js/admin-panel.js" type="module"></script>
+    <script src="../js/admin.js" type="module"></script>
+  </body>
+</html>

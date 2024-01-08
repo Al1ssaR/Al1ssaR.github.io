@@ -1,0 +1,85 @@
+button {
+  background: #e16a00;
+  border-color: #e16a00;
+  color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 900;
+  border-radius: 12px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.aboutBook-year {
+  background: #2f80ed;
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+  width: 69px;
+  height: 23px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 900;
+  color: white;
+  margin-top: 100px;
+}
+
+.about-book img {
+  width: 100%;
+}
+
+p {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #241400;
+  line-height: 1.8em;
+  padding: 10px;
+}
+
+.aboutBook-comment {
+  width: 607.19px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.aboutBook-send-button {
+  width: 60.11px;
+  height: 60px;
+  border-radius: 5px;
+  background: #e16a00;
+  border-radius: 5px;
+}
+.aboutBook-comment-section {
+  width: 686px;
+  height: auto;
+  margin-bottom: 200px;
+  margin-top: 130px;
+  background-color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.about-book-comm-name {
+  font-weight: bolder !important;
+}
+@media (max-width: 991.99px) {
+  .about-book {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .aboutBook-comment {
+    width: auto;
+  }
+  .aboutBook-comment-section {
+    width: auto;
+  }
+}

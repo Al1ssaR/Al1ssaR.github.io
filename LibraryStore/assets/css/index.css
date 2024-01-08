@@ -1,0 +1,132 @@
+#home-info {
+  margin-top: 100px;
+}
+
+.home-a-z {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 196.19%;
+}
+
+.home-info-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 196.19%;
+}
+.buton {
+  background-color: rgba(225, 106, 0, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  border: none;
+}
+
+.home-catalog-title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+#home-category {
+  transition: all 0.3s ease-in-out;
+}
+#home-category:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#home-category .card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 196.19%;
+  color: black;
+}
+
+#home-category a {
+  color: black;
+  text-decoration: none;
+}
+
+.home-statistics-title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+.home-statistics-values span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 196.19%;
+}
+
+.home-statistics-values p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 196.19%;
+}
+
+#home-delivery {
+  margin-top: 150px;
+}
+.home-delivery-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+}
+
+.home-delivery-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+}
+.home-join-title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.home-join-buton {
+  background-color: rgba(225, 106, 0, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  border: none;
+  width: 100%;
+}
+
+
+
+/* grid */
+
+@media (max-width: 770px) {
+  .home-info-buton-container {
+    text-align: center;
+  }
+  .buton {
+    width: 100%;
+  }
+}

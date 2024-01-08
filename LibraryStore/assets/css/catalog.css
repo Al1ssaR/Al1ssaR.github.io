@@ -1,0 +1,104 @@
+.bg-orange {
+  background-color: #e16a00;
+}
+
+.book-type {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.search-title {
+  color: #241400;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.card {
+  margin: 0 0.5em;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #241400;
+}
+.card-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #241400;
+}
+.btn,
+.bg-orange {
+  width: 7.1rem;
+  height: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e16a00;
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+}
+
+.home-join-title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.home-join-buton {
+  background-color: rgba(225, 106, 0, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  border: none;
+  width: 100%;
+}
+
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  max-height: 100%;
+}
+
+.fa-xl:hover {
+  cursor: pointer;
+}
+
+.draggable {
+  margin-bottom: 20px !important;
+  height: 380px !important;
+}
+
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+  .draggable {
+    margin-bottom: 20px !important;
+    height: 450px !important;
+  }
+}

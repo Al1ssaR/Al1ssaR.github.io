@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../photos/admin tab icon.png" />
+
+    <link rel="stylesheet" href="../css/admin.css" />
+
+    <title>Admin Login | Library Book Store</title>
+  </head>
+
+  <body>
+
+     <!--header section starts-->
+    <header id="admin-login-header">
+      <div class="container-fluid px-1 px-md-5 pt-5">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand" href="admin-login.html" id="admin-login-logo">
+            <img src="../photos/admin logo.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+      <!--header section ends-->
+
+            <!--admin-login section starts-->
+
+    <section id="admin-login">
+      <div class="container">
+        <div class="col-12 col-md-7 mx-auto">
+          <div class="mt-5 px-0 px-lg-5">
+            <div class="modal-dialog col-4 admin-login-box mx-auto">
+              <div
+                class="modal-content admin-login-box rounded-0 px-3 px-lg-5 py-5 mr-5"
+              >
+                <div class="modal-body mb-5">
+                  <div class="admin-login-title text-center mb-5">
+                    <h1>Приветствуем Админ</h1>
+                  </div>
+                  <form method="post" id="admin-login-form">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        placeholder="E-mail"
+                        class="form-control form-control-lg py-3 rounded-0 mb-5"
+                        id="admin-email"
+                      />
+                    </div>
+                    <div class="form-group mt-4 mb-5">
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="form-control form-control-lg py-3 rounded-0"
+                        id="admin-password"
+                      />
+                    </div>
+
+                    <div
+                      class="alert alert-danger mt-4 join-error"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Error</h4>
+                      <p></p>
+                      <p id="errorP" class="mb-0">Неверные данные</p>
+                    </div>
+
+                    <div
+                      class="alert alert-success mt-4 join-success"
+                      role="alert"
+                      style="display: none"
+                    >
+                      <h4 class="alert-heading">Успех</h4>
+                      <p></p>
+                      <p class="mb-0">Добро пожаловать, в админ панель</p>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="mb-3 text-center mx-auto w-100">
+                  <button
+                    type="submit"
+                    class="admin-login-buton w-100 py-3 rounded-0"
+                    id="admin-login-btn"
+                  >
+                    Авторизация
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--admin-login section ends-->
+
+    <!--script tags-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="../js/firebase.js" type="module"></script>
+
+  </body>
+</html>

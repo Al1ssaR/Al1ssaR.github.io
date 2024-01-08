@@ -1,0 +1,28 @@
+body {
+  background-color: #720418;
+}
+.admin-login-title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.admin-login-buton {
+  background-color: rgba(225, 106, 0, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  border: none;
+  width: 100%;
+}
+
+.admin-login-box {
+  position: static !important;
+  background-color: white;
+}

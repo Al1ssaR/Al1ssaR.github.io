@@ -1,0 +1,154 @@
+.admin-menu-bar {
+  background-color: rgba(114, 4, 24, 1);
+}
+
+.admin-menu-bar a span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+
+.admin-menu-bar a {
+  text-decoration: none;
+}
+
+.admin-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+}
+
+.admin-add-book h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 196.19%;
+}
+
+.admin-search-input {
+  background: #ffffff;
+  border: 2px solid rgba(57, 31, 0, 0.48);
+  border-radius: 34px;
+}
+#btnSearch:hover {
+  cursor: pointer;
+}
+.fs-18 h1 {
+  font-size: 18px;
+}
+
+.admin-book-form {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.form-control {
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.387);
+  border-radius: 10px;
+}
+
+.buton {
+  background-color: rgba(225, 106, 0, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  border: none;
+  border-radius: 10px;
+}
+
+.form-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.bg-thead {
+  background-color: rgba(114, 4, 24, 1);
+}
+.bg-tbody {
+  background-color: white;
+}
+
+.bg-tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.bg-thead tr th {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  padding: 20px;
+}
+
+.bg-tbody tr th {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  margin-bottom: 0 !important;
+  padding: 20px;
+}
+
+.bg-tbody tr td {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  margin-bottom: 0 !important;
+  padding: 20px;
+}
+
+#admin-panel-menuForMobile {
+  display: none;
+}
+.adminHeaderMobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  #admin-panel-menu {
+    display: none !important;
+  }
+  #admin-panel-menuForMobile {
+    display: none;
+    background-color: #68141b;
+    background-color: #68141b;
+    color: #68141b;
+  }
+  .adminHeader {
+    display: none;
+  }
+  .adminHeaderMobile {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  #admin-panel-menu {
+    display: none !important;
+  }
+  #admin-panel-menuForMobile {
+    display: none;
+    background-color: #68141b;
+  }
+  .adminHeader {
+    display: none;
+  }
+  .adminHeaderMobile {
+    display: block;
+  }
+}
+

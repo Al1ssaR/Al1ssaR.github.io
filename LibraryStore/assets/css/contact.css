@@ -1,0 +1,123 @@
+body {
+  background-color: rgba(255, 250, 246, 255) !important;
+}
+
+.generalContact input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  padding: 20px 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #495057;
+}
+.generalContact {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.generalContact h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.generalContact input:focus {
+  border: 1px solid #495057;
+  outline: 4px solid rgb(163, 207, 251);
+}
+.generalContact button {
+  background-color: rgb(255, 139, 0);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border: 1px none transparent;
+  border-radius: 4px;
+  width: 30%;
+  height: 75px;
+  margin-top: 2rem;
+}
+.generalContact button:hover {
+  background-color: rgb(226, 161, 82);
+}
+.inputSearch {
+  position: relative;
+}
+.inputSearch i {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  font-size: 16px;
+  color: #212529;
+}
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.error {
+  color: #af4242;
+  background-color: #fde8ec;
+  padding: 10px;
+  display: none;
+}
+.error.display-error {
+  display: block;
+  margin-bottom: 20px;
+  transform: translateY(-20px);
+}
+.success {
+  margin-bottom: 30px;
+  color: green;
+  background-color: #d2ffd2;
+  padding: 10px;
+  display: none;
+}
+.success.display-success {
+  display: block;
+}
+
+form {
+  margin: 0;
+}
+
+.fa-xl:hover {
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  cursor: pointer;
+}
+
+.read-more-container h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 196.19%;
+  
+}
+
+p.slider-aname{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 196.19%;
+}
+
+p#read-more{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 196.19%;
+  text-align: justify;
+}
+
+.read-more-btn{
+  color: #e16a00 !important;
+}

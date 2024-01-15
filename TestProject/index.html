@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый сайт</title>
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- SCRIPTS -->
+    <!-- Bootstrap -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="js/gallery-modal.js"></script>
+    <script defer src="js/text-scroll.js"></script>
+</head>
+<body>
+    <header class="header">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                      <a class="navbar-brand py-0 d-flex" href="#"><img class="img-fluid" src="img/logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item me-2">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                          </li>
+                          <li class="nav-item me-2">
+                            <a class="nav-link" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item me-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                2-х уровневое меню
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Галерея</a></li>
+                              <li><a class="dropdown-item" href="#">Страничка</a></li>
+                            </ul>
+                          </li>
+                          
+                        </ul>
+                        <button type="button" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="bi bi-telephone me-2"></i>
+                            Заказать звонок
+                          </button>
+                      </div>
+                    </div>
+                  </nav>
+           
+            <!-- Modal -->
+            <div class="modal fade mt-5" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Форма заказа звонка</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <form class="row g-3" >
+                                <div class=" col-12 mb-1">
+                                    <input type="text" class="form-control" id="nameInput" placeholder="Имя">
+                                </div>
+                                <div class=" col-12 mb-3">
+                                    <input type="tel" class="form-control" id="telInput" placeholder="Номер телефона">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary mb-3 w-100">Заказать звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </header>
+    <main class="main">
+        <section class="description pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="description-title text-center mb-4">Блок с картинкой и текстом</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center order-last order-lg-first ">
+                        <p class="description-text text-lg-start text-center">
+                            Есть над чем задуматься: реплицированные с зарубежных источников, 
+                            современные исследования являются только методом политического участия и 
+                            ассоциативно распределены по отраслям. А ещё независимые государства призваны к ответу. 
+                            Также как укрепление и развитие внутренней структуры предопределяет высокую востребованность 
+                            глубокомысленных рассуждений. Высокий уровень вовлечения представителей целевой аудитории является 
+                            четким доказательством простого факта: убеждённость некоторых оппонентов предопределяет высокую востребованность 
+                            глубокомысленных рассуждений. В целом, конечно, убеждённость некоторых оппонентов создаёт предпосылки для экспериментов, 
+                            поражающих по своей масштабности и грандиозности! Кстати, многие известные личности смешаны с не уникальными данными до 
+                            степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Для современного мира повышение уровня 
+                            гражданского сознания способствует повышению качества соответствующих условий активизации. В своём стремлении повысить качество 
+                            жизни, они забывают, что граница обучения кадров выявляет срочную потребность инновационных методов управления процессами.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 order-first order-lg-last mb-4 mb-lg-0">
+                        <img class="img-fluid d-block mx-auto" src="img/description-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="cards-title text-center mb-4">Блок с сеткой из 3 блоков в ряд</h2>
+                </div>
+                <div class="row d-flex">
+                    <div class="card-item col-sm-12 col-md-6 col-lg-4 text-center">
+                        <i class="bi bi-truck fs-1"></i>
+                        <h3 class="card-title mb-2">Доставка</h3>
+                        <p class="card-info">
+                            Противоположная точка зрения подразумевает, что непосредственные участники технического прогресса 
+                            призывают нас к новым свершениям, которые, в свою очередь, должны быть ограничены исключительно образом мышления.
+                        </p>
+                    </div>
+                    <div class="card-item col-sm-12 col-md-6 col-lg-4 text-center">
+                        <i class="bi bi-envelope fs-1"></i>
+                        <h3 class="card-title mb-2">Почта</h3>
+                        <p class="card-info">
+                            В частности, начало повседневной работы по формированию позиции позволяет оценить значение системы обучения кадров, соответствующей насущным потребностям!
+                        </p>
+                    </div>
+                    <div class="card-item col-sm-12 col-md-6 col-lg-4 text-center">
+                        <i class="bi bi-shield-check fs-1"></i>
+                        <h3 class="card-title mb-2">Безопасность</h3>
+                        <p class="card-info">
+                            Не следует, однако, забывать, что курс на социально-ориентированный национальный проект, 
+                            а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поставленных обществом задач.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="gallery-title text-center mb-4">Галерея</h2>
+                </div>
+                <div class="row gallery">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="image" onclick="openModal(); currentSlide(this)">
+                            <img class="img-fluid" src="img/gallery-image-1.jpeg" >
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="image" onclick="openModal(); currentSlide(this)">
+                            <img class="img-fluid" src="img/gallery-image-3.jpg" >
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="image" onclick="openModal(); currentSlide(this)">
+                            <img class="img-fluid" src="img/gallery-image-2.jpg" >
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Модальное для галереи -->
+                <div id="Modal" class="modal-gallery">
+                    <button type="button" class="btn-close btn-close-white close" onclick="closeModal()"></button>
+                    <div class="modal-gallery-content">
+                      <div class="slide-item">
+                        <img class="img-fluid d-block mx-auto" src="img/gallery-image-1.jpeg" alt="Image 1">
+                        <div class="caption">Бирюзовый овсянковый Кардинал</div>
+                      </div>
+                      <div class="slide-item">
+                        <img class="img-fluid d-block mx-auto" src="img/gallery-image-3.jpg" alt="Image 1">
+                        <div class="caption">Дрозд свиристель Крымский</div>
+                      </div>
+                      <div class="slide-item">
+                        <img class="img-fluid d-block mx-auto"src="img/gallery-image-2.jpg" alt="Image 1">
+                        <div class="caption">Танагра оранжевая</div>
+                      </div>
+                      <a class="prev" onclick="changeSlides(-1)"><i class="bi bi-arrow-left-square fs-1"></i></a>
+                      <a class="next" onclick="changeSlides(1)"><i class="bi bi-arrow-right-square fs-1"></i></a>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

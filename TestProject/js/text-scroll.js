@@ -1,5 +1,3 @@
-
-
 //Вертикальный скролл
 const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>{
   let isDragging = false;
@@ -12,6 +10,23 @@ const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>
   const height = parseInt(computedStyle.height);
   scrollBar.style.height = `${height-2}px`
   scrollBar.value = 0;
+
+  // Обработчики событий для касаний на мобильных устройствах
+  let lastTouchY = 0;
+
+  scrollableInnerContent.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    lastTouchY = e.changedTouches[0].clientY;
+  });
+
+  scrollableInnerContent.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+    let delta = lastTouchY - e.changedTouches[0].clientY;
+    lastTouchY = e.changedTouches[0].clientY;
+
+    scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + 200, scrollableInnerContent.offsetTop - delta)) + 'px';
+    updateScrollBar();
+  });
   // Ниже 3 обработчика перетаскивания
   scrollableInnerContent.addEventListener('mousedown', function(e) {
     isDragging = true;
@@ -81,6 +96,24 @@ const HorizontalScroll = (scrollableContent, scrollableInnerContent, scrollBar) 
   const width = parseInt(computedStyle.width); 
   scrollBar.style.width = `${width - 2}px`; 
   scrollBar.value = 0;
+
+  // Обработчики событий для касаний на мобильных устройствах
+  let lastTouchX = 0;
+
+  scrollableInnerContent.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    lastTouchX = e.changedTouches[0].clientX;
+  });
+
+  scrollableInnerContent.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+    let delta = lastTouchX - e.changedTouches[0].clientX;
+    lastTouchX = e.changedTouches[0].clientX;
+
+    scrollableInnerContent.style.left = Math.min(0, Math.max(-scrollableInnerContent.clientWidth + width, scrollableInnerContent.offsetLeft - delta)) + 'px';
+    updateScrollBar();
+  });
+
   // Ниже 3 обработчика перетаскивания
   scrollableInnerContent.addEventListener('mousedown', function (e) {
       isDragging = true;

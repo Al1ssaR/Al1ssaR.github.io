@@ -1,30 +1,39 @@
 /* Стили блока с тектом для реализации прокрутки */
 
 .description-text-wrap{
+  width: 400px;
   height: 200px;
   position: relative;
   border: 1px solid #ccc;
   overflow: hidden;
+  
 }
 .description-text{
   padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 530px;
   user-select: none;
   cursor: pointer;
 }
-#scrollBar{
+#scrollBarV{
   -webkit-appearance: slider-vertical;
   transform: rotate(180deg);
   width: 10px; 
   position: absolute; 
   bottom: 0; 
   right: 0;
-
+  z-index: 1;
 }
 
+#scrollBarH{
+  width: 10px; 
+  position: absolute; 
+  bottom: 0; 
+  right: 0;
+
+}
 
 
 

@@ -145,50 +145,30 @@
             </div>
         </section>
         <section class="gallery pt-5 pb-5">
-            <div class="container">
+            <div class="container gallery-container">
                 <div class="row">
                     <h2 class="gallery-title text-center mb-4">Галерея</h2>
                 </div>
                 <div class="row gallery">
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                        <div class="image" onclick="openModal(); currentSlide(this)">
+                        <div class="image" >
                             <img class="img-fluid" src="img/gallery-image-1.jpeg" >
                             <div class="overlay"></div>
                         </div> 
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                        <div class="image" onclick="openModal(); currentSlide(this)">
+                        <div class="image" >
                             <img class="img-fluid" src="img/gallery-image-3.jpg" >
                             <div class="overlay"></div>
                         </div> 
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <div class="image" onclick="openModal(); currentSlide(this)">
+                        <div class="image" >
                             <img class="img-fluid" src="img/gallery-image-2.jpg" >
                             <div class="overlay"></div>
                         </div> 
                     </div>
                 </div>
-                <!-- Модальное для галереи -->
-                <div id="Modal" class="modal-gallery">
-                    <button type="button" class="btn-close btn-close-white close" onclick="closeModal()"></button>
-                    <div class="modal-gallery-content">
-                      <div class="slide-item">
-                        <img class="img-fluid d-block mx-auto" src="img/gallery-image-1.jpeg" alt="Image 1">
-                        <div class="caption">Бирюзовый овсянковый Кардинал</div>
-                      </div>
-                      <div class="slide-item">
-                        <img class="img-fluid d-block mx-auto" src="img/gallery-image-3.jpg" alt="Image 1">
-                        <div class="caption">Дрозд свиристель Крымский</div>
-                      </div>
-                      <div class="slide-item">
-                        <img class="img-fluid d-block mx-auto"src="img/gallery-image-2.jpg" alt="Image 1">
-                        <div class="caption">Танагра оранжевая</div>
-                      </div>
-                      <a class="prev" onclick="changeSlides(-1)"><i class="bi bi-arrow-left-square fs-1"></i></a>
-                      <a class="next" onclick="changeSlides(1)"><i class="bi bi-arrow-right-square fs-1"></i></a>
-                    </div>
-                  </div>
             </div>
         </section>
     </main>

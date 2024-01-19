@@ -1,5 +1,8 @@
 //Вертикальный скролл
 const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>{
+  let isDraggingV = false;
+  
+
   let isDragging = false;
   let startOffset = 0;
   let startPageY = 0;
@@ -8,8 +11,62 @@ const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>
   let scrollMultiplier = 0.10; // Множитель скорости прокрутки
   const computedStyle = window.getComputedStyle(scrollableContent);
   const height = parseInt(computedStyle.height);
-  scrollBar.style.height = `${height-2}px`
+  scrollBar.style.height = `${height}px`
   scrollBar.value = 0;
+
+  scrollBarV.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    
+    const delta = -e.deltaY;
+
+    lastScrollY = scrollableInnerContent.offsetTop + delta * scrollMultiplier;
+    
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + height, lastScrollY)) + 'px';
+        updateScrollBarV();
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+});
+    scrollBarV.addEventListener('mousedown', function (e) {
+      isDraggingV = true;
+      startPageY = e.pageY - scrollBarV.offsetTop;
+      startOffset = scrollableInnerContent.offsetTop;
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function (e) {
+      if (isDraggingV) {
+          const deltaY = e.pageY - startPageY;
+          const newScrollTop = startOffset - deltaY*1.7;
+          if (!ticking) {
+            window.requestAnimationFrame(function() {
+              scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + height, newScrollTop)) + 'px';
+              updateScrollBarV();
+              ticking = false;
+            });
+      
+            ticking = true;
+          }
+          e.preventDefault();
+      }
+    });
+
+    document.addEventListener('mouseup', function () {
+      isDraggingV = false;
+    });
+
+    function updateScrollBarV() {
+      const maxScroll = scrollableInnerContent.clientHeight - height + 50;
+      const scrollPercentage = Math.abs((((scrollableInnerContent.offsetTop)/ maxScroll)) * 100);
+      const thumbPosition = Math.min(100, Math.max(0, scrollPercentage));
+      scrollBarV.querySelector('.scroll-bar-thumb').style.top = `${thumbPosition}%`;
+    }
+
+
 
   // Обработчики событий для касаний на мобильных устройствах
   let lastTouchY = 0;
@@ -25,7 +82,7 @@ const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>
     lastTouchY = e.changedTouches[0].clientY;
 
     scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + 200, scrollableInnerContent.offsetTop - delta)) + 'px';
-    updateScrollBar();
+    updateScrollBarV();
   });
   // Ниже 3 обработчика перетаскивания
   scrollableInnerContent.addEventListener('mousedown', function(e) {
@@ -40,7 +97,7 @@ const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>
       const delta = e.pageY - startPageY;
       // Устанавливаем верхнее положение контента с учетом пределов прокрутки
       scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + height, startOffset + delta)) + 'px';
-      updateScrollBar();
+      updateScrollBarV();
       e.preventDefault();
     }
   });
@@ -59,28 +116,15 @@ const VerticalScroll = (scrollableContent, scrollableInnerContent, scrollBar) =>
       if (!ticking) {
         window.requestAnimationFrame(function() {
           scrollableInnerContent.style.top = Math.min(0, Math.max(-scrollableInnerContent.clientHeight + height, lastScrollY)) + 'px';
-          updateScrollBar();
+          updateScrollBarV();
           ticking = false;
         });
   
         ticking = true;
       }
   });
-  // Функция обновления скроллбара
-  function updateScrollBar() {
 
-      const maxScroll = scrollableInnerContent.clientHeight - scrollableContent.clientHeight;
-      const scrollPercentage = (scrollableInnerContent.offsetTop / maxScroll) * 100;
-      scrollBar.value = Math.abs(scrollPercentage);
-      
-  }
 
-  // Обработчик события изменения ползунка
-  scrollBar.addEventListener('input', function () {
-      const maxScroll = scrollableInnerContent.clientHeight - scrollableContent.clientHeight;
-      const scrollPosition = (scrollBar.value / 100) * maxScroll;
-      scrollableInnerContent.style.top = -scrollPosition + 'px';
-  });
 }
 
 
@@ -111,7 +155,7 @@ const HorizontalScroll = (scrollableContent, scrollableInnerContent, scrollBar) 
     lastTouchX = e.changedTouches[0].clientX;
 
     scrollableInnerContent.style.left = Math.min(0, Math.max(-scrollableInnerContent.clientWidth + width, scrollableInnerContent.offsetLeft - delta)) + 'px';
-    updateScrollBar();
+    updateScrollBarV();
   });
 
   // Ниже 3 обработчика перетаскивания
@@ -126,7 +170,7 @@ const HorizontalScroll = (scrollableContent, scrollableInnerContent, scrollBar) 
       if (isDragging) {
           const delta = e.pageX - startPageX; 
           scrollableInnerContent.style.left = Math.min(0, Math.max(-scrollableInnerContent.clientWidth + width, startOffset + delta)) + 'px'; 
-          updateScrollBar();
+          updateScrollBarV();
           e.preventDefault();
       }
   });
@@ -144,7 +188,7 @@ const HorizontalScroll = (scrollableContent, scrollableInnerContent, scrollBar) 
       if (!ticking) {
           window.requestAnimationFrame(function () {
               scrollableInnerContent.style.left = Math.min(0, Math.max(-scrollableInnerContent.clientWidth + width, lastScrollX)) + 'px'; 
-              updateScrollBar();
+              updateScrollBarV();
               ticking = false;
           });
 
@@ -152,7 +196,7 @@ const HorizontalScroll = (scrollableContent, scrollableInnerContent, scrollBar) 
       }
   });
   // Функция обновления скроллбара
-  function updateScrollBar() {
+  function updateScrollBarV() {
       const maxScroll = scrollableInnerContent.clientWidth - scrollableContent.clientWidth; 
       const scrollPercentage = (scrollableInnerContent.offsetLeft / maxScroll) * 100; 
       scrollBar.value = Math.abs(scrollPercentage);

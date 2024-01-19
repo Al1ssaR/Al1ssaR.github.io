@@ -1,5 +1,8 @@
 /* Стили блока с тектом для реализации прокрутки */
-
+.description-wrap-container{
+  width: 400px;
+  position: relative;
+}
 .description-text-wrap{
   width: 400px;
   height: 200px;
@@ -18,12 +21,11 @@
   cursor: pointer;
 }
 #scrollBarV{
-  -webkit-appearance: slider-vertical;
-  transform: rotate(180deg);
+  
   width: 10px; 
   position: absolute; 
   bottom: 0; 
-  right: 0;
+  right: -5px;
   z-index: 1;
 }
 
@@ -31,10 +33,40 @@
   width: 10px; 
   position: absolute; 
   bottom: 0; 
-  right: 0;
+  right: -5px;
 
 }
 
+
+
+/* Стили для фона вертикального скроллбара */
+.scroll-bar-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  
+}
+
+/* Стили для ползунка вертикального скроллбара */
+.scroll-bar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Высота ползунка */
+  background-color: #333;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+/* Стили для активного состояния ползунка вертикального скроллбара */
+.scroll-bar-thumb:active {
+  cursor: grabbing;
+}
 
 
 
